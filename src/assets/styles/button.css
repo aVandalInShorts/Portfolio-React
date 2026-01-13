@@ -1,0 +1,46 @@
+@property --cta-bg-dark {
+	syntax: "<color>";
+	initial-value: #155dfc;
+	inherits: false;
+}
+
+@property --cta-bg-light {
+	syntax: "<color>";
+	initial-value: #0092b8;
+	inherits: false;
+}
+
+@layer button {
+	.cta {
+		--cta-bg-angle: 90deg;
+
+		display: inline-flex;
+		align-items: center;
+		gap: 7px;
+		color: var(--pure-white);
+		text-align: center;
+		padding: 10px 24px;
+		border-radius: 10px;
+		background-image: linear-gradient(
+			var(--cta-bg-angle),
+			var(--cta-bg-dark) 0%,
+			var(--cta-bg-light) 100%
+		);
+		text-decoration: none;
+		transition: --cta-bg-dark 0.3s, --cta-bg-light 0.3s;
+
+		svg {
+			width: 20px;
+			height: 20px;
+
+			* {
+				fill: var(--pure-white);
+			}
+		}
+
+		&:hover {
+			--cta-bg-dark: #0092b8;
+			--cta-bg-light: #155dfc;
+		}
+	}
+}

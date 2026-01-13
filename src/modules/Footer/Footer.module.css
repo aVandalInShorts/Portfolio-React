@@ -1,0 +1,16 @@
+.footer {
+	align-items: center;
+	height: 88px;
+	background-color: var(--dark-blue-alt-50);
+	text-align: center;
+
+	p {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.footer {
+		height: 65px;
+	}
+}

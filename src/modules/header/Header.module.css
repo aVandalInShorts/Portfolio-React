@@ -24,10 +24,6 @@
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin: 0;
-
-	@media screen and (max-width: var(--screen-tablet)) {
-		font-size: 10px;
-	}
 }
 
 .nav {

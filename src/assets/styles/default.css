@@ -4,4 +4,20 @@
 		font-family: var(--font-family);
 		color: var(--white);
 	}
+
+	h1,
+	.h1,
+	h2,
+	.h2 {
+		color: var(--pure-white);
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 1.2;
+		margin-block-end: 16px;
+	}
+
+	p {
+		color: var(--gray);
+		margin-block: 16px;
+	}
 }
