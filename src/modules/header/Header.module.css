@@ -15,6 +15,7 @@
 }
 
 .title {
+	font-size: 20px;
 	background: linear-gradient(
 		90deg,
 		var(--gradient-blue) 0%,
@@ -23,6 +24,10 @@
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	margin: 0;
+
+	@media screen and (max-width: var(--screen-tablet)) {
+		font-size: 10px;
+	}
 }
 
 .nav {
@@ -94,5 +99,15 @@
 	svg {
 		width: 20px;
 		height: 20px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.header {
+		height: 62px;
+	}
+
+	.title {
+		font-size: 18px;
 	}
 }
