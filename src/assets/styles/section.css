@@ -1,0 +1,15 @@
+@layer section {
+	.section {
+		display: grid;
+		grid-template-columns:
+			[viewport-start] minmax(30px, 1fr) [main-start] min(
+				100% - 60px,
+				1100px
+			)
+			[main-end] minmax(30px, 1fr) [viewport-end];
+	}
+
+	.section-inner {
+		grid-column: main-start / main-end;
+	}
+}

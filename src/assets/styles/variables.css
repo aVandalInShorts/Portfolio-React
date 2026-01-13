@@ -1,0 +1,17 @@
+@layer variables {
+	:root {
+		--dark-blue: #0f172b;
+		--dark-blue-50: #0f172bcc;
+		--dark-blue-alt-50: #1d293d80;
+		--blue: #2b7fff;
+		--blue-20: #2b7fff33;
+
+		--gradient-blue: #51a2ff;
+		--gradient-light-blue: #00d3f2;
+
+		--white: #d1d5dc;
+		--white-20: #d1d5dc33;
+
+		--font-family: "Arial", "Helvetica", sans-serif;
+	}
+}

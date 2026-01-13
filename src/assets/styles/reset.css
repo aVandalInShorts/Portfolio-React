@@ -38,6 +38,7 @@
 	body {
 		min-height: 100vh;
 		line-height: 1.5;
+		margin: 0;
 	}
 
 	/* Set shorter line heights on headings and interactive elements */
@@ -79,6 +80,7 @@
 	select {
 		font-family: inherit;
 		font-size: inherit;
+		color: inherit;
 	}
 
 	/* Make sure textareas without a rows attribute are not tiny */

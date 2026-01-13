@@ -1,0 +1,7 @@
+@layer default {
+	html {
+		background-color: var(--dark-blue);
+		font-family: var(--font-family);
+		color: var(--white);
+	}
+}
