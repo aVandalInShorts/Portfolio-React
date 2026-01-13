@@ -6,24 +6,6 @@
 	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
 		0 4px 6px -4px rgba(0, 0, 0, 0.1);
 	height: 75px;
-
-	button {
-		display: flex;
-		align-items: center;
-		border-radius: 10px;
-		border: 1px solid var(--blue-20);
-		background-color: var(--dark-blue-alt-50);
-		padding: 0px 15px;
-		height: 42px;
-		cursor: pointer;
-		color: var(--gradient-blue);
-		font-weight: 700;
-		transition: background-color 0.3s ease-in-out;
-
-		&:hover {
-			background-color: var(--white-20);
-		}
-	}
 }
 
 .header-inner {
@@ -75,5 +57,42 @@
 				scale: 1;
 			}
 		}
+	}
+
+	button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 10px;
+		border: 1px solid var(--blue-20);
+		background-color: var(--dark-blue-alt-50);
+		height: 42px;
+		cursor: pointer;
+		color: var(--gradient-blue);
+		font-weight: 700;
+		transition: background-color 0.3s ease-in-out;
+
+		&:hover {
+			background-color: var(--white-20);
+		}
+
+		svg {
+			& path {
+				fill: var(--gradient-blue);
+			}
+		}
+	}
+}
+
+.lang-btn {
+	width: 50px;
+}
+
+.theme-btn {
+	width: 42px;
+
+	svg {
+		width: 20px;
+		height: 20px;
 	}
 }
