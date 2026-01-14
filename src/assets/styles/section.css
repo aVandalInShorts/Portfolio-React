@@ -12,4 +12,8 @@
 	.section-inner {
 		grid-column: main-start / main-end;
 	}
+
+	.section-alt-bg {
+		background-color: var(--dark-blue-alt-50);
+	}
 }

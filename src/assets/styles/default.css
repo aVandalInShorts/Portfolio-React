@@ -8,16 +8,47 @@
 	h1,
 	.h1,
 	h2,
-	.h2 {
+	.h2,
+	h3,
+	.h3,
+	h4,
+	.h4,
+	h5,
+	.h5,
+	h6,
+	.h6 {
 		color: var(--pure-white);
-		font-size: 30px;
 		font-weight: 700;
 		line-height: 1.2;
 		margin-block-end: 16px;
+		text-wrap: balance;
+	}
+
+	h1,
+	.h1,
+	h2,
+	.h2 {
+		font-size: 30px;
+	}
+
+	h3,
+	.h3 {
+		font-size: 16px;
+		line-height: 1.5;
 	}
 
 	p {
 		color: var(--gray);
 		margin-block: 16px;
+		orphans: 3;
+		widows: 2;
+
+		&:first-child {
+			margin-block-start: 0;
+		}
+
+		&:last-child {
+			margin-block-end: 0;
+		}
 	}
 }
