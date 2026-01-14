@@ -18,15 +18,21 @@ export const About = () => {
 				</div>
 				<ul className={styles.list}>
 					<li>
-						<div className="h3">1000 d'expérience!</div>
+						<div className={`${styles["list-title"]} h3`}>
+							1000 d'expérience!
+						</div>
 						<p>Dans le domaine du développement web.</p>
 					</li>
 					<li>
-						<div className="h3">Plein de projets!</div>
+						<div className={`${styles["list-title"]} h3`}>
+							Plein de projets!
+						</div>
 						<p>Dans le domaine du développement web.</p>
 					</li>
 					<li>
-						<div className="h3">1000 d'expérience!</div>
+						<div className={`${styles["list-title"]} h3`}>
+							1000 d'expérience!
+						</div>
 						<p>Dans le domaine du développement web.</p>
 					</li>
 				</ul>

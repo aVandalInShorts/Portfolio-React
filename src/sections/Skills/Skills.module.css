@@ -1,0 +1,26 @@
+.skills {
+	margin-block: 80px;
+}
+
+.title {
+	margin-block-end: 50px;
+	text-align: center;
+}
+
+.list {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	justify-content: center;
+	margin-left: -32px;
+}
+
+@media screen and (max-width: 767px) {
+	.skills {
+		margin-block: 45px;
+	}
+
+	.title {
+		margin-block-end: 35px;
+	}
+}

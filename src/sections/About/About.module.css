@@ -5,7 +5,7 @@
 
 .about-inner {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr auto;
 	grid-template-areas:
 		"title title"
 		"description list";
@@ -34,6 +34,7 @@
 	li {
 		position: relative;
 		padding-inline-start: 24px;
+		transition: translate 0.3s ease;
 
 		&:not(:last-child) {
 			margin-block-end: 16px;
@@ -51,6 +52,7 @@
 			width: 10px;
 			height: 10px;
 			border-radius: 100%;
+			transition: scale 0.3s ease;
 		}
 
 		&:nth-child(3n + 1) {
@@ -70,7 +72,19 @@
 				background-color: var(--purple);
 			}
 		}
+
+		&:hover {
+			translate: 15px 0;
+
+			&:before {
+				scale: 1.7;
+			}
+		}
 	}
+}
+
+.list-title {
+	font-size: 16px;
 }
 
 @media screen and (max-width: 767px) {
