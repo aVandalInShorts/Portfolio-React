@@ -1,0 +1,63 @@
+.effects {
+	position: fixed;
+	top: 0;
+	z-index: -1;
+	width: 100%;
+	opacity: 1;
+}
+
+.effects-inner {
+	position: relative;
+}
+
+.first,
+.second,
+.third {
+	position: absolute;
+	border-radius: 100%;
+	filter: blur(64px);
+	opacity: 0.075;
+	animation: pulse 3s infinite;
+	translate: 0 0;
+}
+
+.first {
+	top: 20px;
+	left: 0px;
+	height: 384px;
+	width: 384px;
+	background-color: var(--purple);
+}
+
+.second {
+	top: 550px;
+	right: -100px;
+	height: 384px;
+	width: 384px;
+	background-color: var(--purple);
+	animation-delay: 1s;
+}
+
+.third {
+	top: 900px;
+	right: 300px;
+	height: 384px;
+	width: 384px;
+	background-color: var(--turquoise);
+	animation-delay: 2s;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+		opacity: 0.075;
+	}
+	50% {
+		transform: scale(1.1);
+		opacity: 0.25;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0.075;
+	}
+}
