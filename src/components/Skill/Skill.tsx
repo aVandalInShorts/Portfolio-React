@@ -1,7 +1,4 @@
-import {
-	IconPicker,
-	type IconType,
-} from "../../../components/icon-picker/IconPicker";
+import { IconPicker, type IconType } from "../icon-picker/IconPicker";
 import styles from "./Skill.module.css";
 
 export interface SkillProps {

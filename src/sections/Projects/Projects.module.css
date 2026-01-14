@@ -1,0 +1,13 @@
+.projects {
+	margin-block: 45px;
+	padding-block: 45px;
+}
+
+.list {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: stretch;
+	justify-content: center;
+	margin-inline-start: -32px;
+	margin-block-start: 40px;
+}

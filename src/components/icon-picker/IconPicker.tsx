@@ -3,6 +3,8 @@ import { Code } from "./icons/Code";
 import { Csharp } from "./icons/Csharp";
 import { Database } from "./icons/Database";
 import { Document } from "./icons/Document";
+import { ExternalLink } from "./icons/ExternalLink";
+import { Github } from "./icons/Github";
 import { LinkedIn } from "./icons/LinkedIn";
 import { Mail } from "./icons/Mail";
 import { Moon } from "./icons/Moon";
@@ -19,6 +21,8 @@ export type IconType =
 	| "csharp"
 	| "database"
 	| "document"
+	| "external-link"
+	| "github"
 	| "linkedin"
 	| "mail"
 	| "moon"
@@ -44,6 +48,10 @@ export const IconPicker = ({ icon }: IconPickerProps) => {
 		return <Database />;
 	} else if (icon === "document") {
 		return <Document />;
+	} else if (icon === "external-link") {
+		return <ExternalLink />;
+	} else if (icon === "github") {
+		return <Github />;
 	} else if (icon === "linkedin") {
 		return <LinkedIn />;
 	} else if (icon === "mail") {

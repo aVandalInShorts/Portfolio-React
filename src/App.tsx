@@ -2,6 +2,7 @@ import { Footer } from "./modules/Footer/Footer";
 import { Header } from "./modules/Header/Header";
 import { About } from "./sections/About/About";
 import { Contact } from "./sections/Contact/Contact";
+import { Projects } from "./sections/Projects/Projects";
 import { Skills } from "./sections/Skills/Skills";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
 			<Header />
 			<About />
 			<Skills />
+			<Projects />
 			<Contact />
 			<Footer />
 		</>

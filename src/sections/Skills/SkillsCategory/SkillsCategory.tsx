@@ -2,7 +2,7 @@ import {
 	IconPicker,
 	type IconType,
 } from "../../../components/icon-picker/IconPicker";
-import { Skill, type SkillProps } from "../Skill/Skill";
+import { Skill, type SkillProps } from "../../../components/Skill/Skill";
 import styles from "./SkillsCategory.module.css";
 
 export interface SkillsCategoryProps {

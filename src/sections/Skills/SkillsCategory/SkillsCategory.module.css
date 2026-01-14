@@ -12,8 +12,8 @@
 	padding: 24px;
 	border-radius: 10px;
 	border: 1px solid var(--blue-20);
-	transition: all 0.3s ease;
 	box-shadow: 0 10px 20px 0px transparent;
+	transition: all 0.3s ease;
 
 	&:hover {
 		border-color: var(--blue-50);
