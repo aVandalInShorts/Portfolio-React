@@ -17,6 +17,10 @@
 		border-color: var(--blue-50);
 		translate: 0 -15px;
 		box-shadow: 0 10px 20px 0px var(--blue-20);
+
+		.title {
+			color: var(--gradient-blue);
+		}
 	}
 }
 
@@ -49,6 +53,7 @@
 
 .title {
 	margin-block: 0 8px;
+	transition: color 0.4s ease;
 }
 
 .description {
@@ -63,7 +68,7 @@
 
 .links {
 	display: flex;
-	gap: 12px;
+	gap: 16px;
 	margin-block-start: 16px;
 
 	a {
@@ -71,15 +76,25 @@
 		align-items: center;
 		color: var(--gray);
 		text-decoration: 0;
-		gap: 9px;
+		gap: 7px;
 		font-size: 14px;
+		transition: color 0.3s ease;
 
 		svg {
-			width: 24px;
-			height: 24px;
+			width: 20px;
+			height: 20px;
 
 			* {
 				fill: var(--gray);
+				transition: fill 0.3s ease;
+			}
+		}
+
+		&:hover {
+			color: var(--gradient-blue);
+
+			svg * {
+				fill: var(--gradient-blue);
 			}
 		}
 	}
