@@ -6,7 +6,7 @@
 	border-bottom: 1px solid var(--blue-20);
 	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
 		0 4px 6px -4px rgba(0, 0, 0, 0.1);
-	height: 75px;
+	height: var(--header-height);
 }
 
 .header-inner {
@@ -27,40 +27,14 @@
 	margin: 0;
 }
 
-.nav {
+.nav,
+.menu {
 	display: flex;
 	gap: 10px 25px;
 	align-items: center;
+}
 
-	a {
-		position: relative;
-		font-size: 16px;
-		text-decoration: none;
-		transition: color 0.3s ease-in-out;
-
-		&:after {
-			content: "";
-			position: absolute;
-			bottom: -2px;
-			left: 0;
-			display: block;
-			width: 100%;
-			height: 2px;
-			background-color: var(--gradient-blue);
-			scale: 0;
-			transform-origin: center left;
-			transition: scale 0.3s ease-in-out;
-		}
-
-		&:hover {
-			color: var(--gradient-blue);
-
-			&:after {
-				scale: 1;
-			}
-		}
-	}
-
+.nav {
 	button {
 		display: flex;
 		align-items: center;
@@ -80,9 +54,23 @@
 
 		svg {
 			& path {
-				fill: var(--gradient-blue);
+				&[fill] {
+					fill: var(--gradient-blue);
+				}
+				&[stroke] {
+					stroke: var(--gradient-blue);
+				}
 			}
 		}
+	}
+}
+
+.menu {
+	a {
+		position: relative;
+		font-size: 16px;
+		text-decoration: none;
+		transition: color 0.3s ease-in-out;
 	}
 }
 
@@ -99,12 +87,92 @@
 	}
 }
 
+.menu-btn {
+	width: 38px;
+
+	svg {
+		width: 18px;
+		height: 18px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.menu {
+		a {
+			&:after {
+				content: "";
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				display: block;
+				width: 100%;
+				height: 2px;
+				background-color: var(--gradient-blue);
+				scale: 0;
+				transform-origin: center left;
+				transition: scale 0.3s ease-in-out;
+			}
+
+			&:hover {
+				color: var(--gradient-blue);
+
+				&:after {
+					scale: 1;
+				}
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 767px) {
+	:root {
+		--header-height: 62px;
+	}
+
 	.header {
-		height: 62px;
+		&.menu-open {
+			.menu {
+				opacity: 1;
+				visibility: visible;
+				translate: 0 0;
+				transition: translate 0.3s ease-in-out, opacity 0.3s ease-in-out,
+					visibility 0s ease-in-out;
+			}
+		}
 	}
 
 	.title {
 		font-size: 18px;
+	}
+
+	.nav {
+		gap: 8px;
+	}
+
+	.menu {
+		flex-flow: column;
+		align-items: normal;
+		position: absolute;
+		inset: 100% 0 auto;
+		padding: var(--mobile-padding);
+		background-color: var(--dark-blue);
+		border-top: 1px solid #152b56;
+		border-bottom: 1px solid var(--blue-20);
+		opacity: 0;
+		visibility: hidden;
+		translate: 0 20px;
+		transition: translate 0.3s ease-in-out, opacity 0.3s ease-in-out,
+			visibility 0s ease-in-out 0.3s;
+
+		a {
+			padding: 10px 15px;
+			border-radius: 8px;
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				background-color: var(--blue-10);
+				color: var(--gradient-blue);
+			}
+		}
 	}
 }

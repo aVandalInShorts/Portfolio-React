@@ -1,10 +1,12 @@
 import { Angular } from "./icons/Angular";
+import { Close } from "./icons/Close";
 import { Code } from "./icons/Code";
 import { Csharp } from "./icons/Csharp";
 import { Database } from "./icons/Database";
 import { Document } from "./icons/Document";
 import { ExternalLink } from "./icons/ExternalLink";
 import { Github } from "./icons/Github";
+import { Hamburger } from "./icons/Hamburger";
 import { LinkedIn } from "./icons/LinkedIn";
 import { Mail } from "./icons/Mail";
 import { Moon } from "./icons/Moon";
@@ -17,12 +19,14 @@ import { Wordpress } from "./icons/Wordpress";
 
 export type IconType =
 	| "angular"
+	| "close"
 	| "code"
 	| "csharp"
 	| "database"
 	| "document"
 	| "external-link"
 	| "github"
+	| "hamburger"
 	| "linkedin"
 	| "mail"
 	| "moon"
@@ -40,6 +44,8 @@ interface IconPickerProps {
 export const IconPicker = ({ icon }: IconPickerProps) => {
 	if (icon === "angular") {
 		return <Angular />;
+	} else if (icon === "close") {
+		return <Close />;
 	} else if (icon === "code") {
 		return <Code />;
 	} else if (icon === "csharp") {
@@ -52,6 +58,8 @@ export const IconPicker = ({ icon }: IconPickerProps) => {
 		return <ExternalLink />;
 	} else if (icon === "github") {
 		return <Github />;
+	} else if (icon === "hamburger") {
+		return <Hamburger />;
 	} else if (icon === "linkedin") {
 		return <LinkedIn />;
 	} else if (icon === "mail") {

@@ -1,12 +1,11 @@
 @layer section {
 	.section {
+		scroll-margin-top: var(--header-height);
 		display: grid;
 		grid-template-columns:
-			[viewport-start] minmax(30px, 1fr) [main-start] min(
-				100% - 60px,
-				1100px
-			)
-			[main-end] minmax(30px, 1fr) [viewport-end];
+			[viewport-start] minmax(var(--mobile-padding), 1fr)
+			[main-start] min(100% - 60px, 1100px)
+			[main-end] minmax(var(--mobile-padding), 1fr) [viewport-end];
 	}
 
 	.section-inner {

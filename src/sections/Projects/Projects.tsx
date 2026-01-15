@@ -41,7 +41,10 @@ export const Projects = () => {
 	];
 
 	return (
-		<section className={styles.projects + " section section-alt-bg"}>
+		<section
+			className={styles.projects + " section section-alt-bg"}
+			id="projects"
+		>
 			<div className={styles.container + " section-inner"}>
 				<h2>Featured Projects</h2>
 				<p>Projects will be updated soon. Stay tuned!</p>

@@ -3,6 +3,7 @@
 		background-color: var(--dark-blue);
 		font-family: var(--font-family);
 		color: var(--white);
+		scroll-behavior: smooth;
 	}
 
 	h1,

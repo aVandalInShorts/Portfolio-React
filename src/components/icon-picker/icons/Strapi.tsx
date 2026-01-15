@@ -14,10 +14,10 @@ export const Strapi = () => {
 				fill="#4945ff"
 			/>
 			<path
-				clip-rule="evenodd"
+				clipRule="evenodd"
 				d="M 145.76547,64.307 H 74.391471 V 100.7 h 36.393999 v 36.393 h 36.393 V 65.72 c 0,-0.78 -0.633,-1.413 -1.413,-1.413 z"
 				fill="#ffffff"
-				fill-rule="evenodd"
+				fillRule="evenodd"
 			/>
 			<path
 				d="m 109.37147,100.67126 h 1.4527 v 1.44174 h -1.4527 z"

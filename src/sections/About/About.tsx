@@ -2,7 +2,10 @@ import styles from "./About.module.css";
 
 export const About = () => {
 	return (
-		<section className={styles.about + " section section-alt-bg"}>
+		<section
+			className={styles.about + " section section-alt-bg"}
+			id="about"
+		>
 			<div className={styles["about-inner"] + " section-inner"}>
 				<h2 className={styles.title}>About</h2>
 				<div className={styles.description}>
