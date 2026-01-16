@@ -1,6 +1,5 @@
 .about {
 	padding-block: 80px;
-	margin-block: 80px;
 }
 
 .about-inner {
@@ -90,7 +89,6 @@
 @media screen and (max-width: 767px) {
 	.about {
 		padding-block: 45px;
-		margin-block: 45px;
 	}
 
 	.about-inner {

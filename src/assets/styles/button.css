@@ -13,13 +13,16 @@
 @layer button {
 	.cta {
 		--cta-bg-angle: 90deg;
+		--cta-padding-inline: 10px;
+		--cta-padding-bloc: 24px;
 
 		display: inline-flex;
 		align-items: center;
 		gap: 7px;
 		color: var(--pure-white);
 		text-align: center;
-		padding: 10px 24px;
+		font-weight: 700;
+		padding: var(--cta-padding-inline) var(--cta-padding-bloc);
 		border-radius: 10px;
 		background-image: linear-gradient(
 			var(--cta-bg-angle),
@@ -34,13 +37,73 @@
 			height: 20px;
 
 			* {
-				fill: var(--pure-white);
+				&[fill] {
+					fill: var(--pure-white);
+				}
+
+				&[stroke] {
+					stroke: var(--pure-white);
+				}
 			}
 		}
 
 		&:hover {
 			--cta-bg-dark: #0092b8;
 			--cta-bg-light: #155dfc;
+		}
+
+		&.bigger {
+			--cta-padding-inline: 20px;
+			--cta-padding-bloc: 32px;
+			min-height: 60px;
+		}
+
+		&.outline {
+			--button-outline-color: #2a80fe;
+
+			position: relative;
+			padding: calc(var(--cta-padding-inline) - 2px)
+				calc(var(--cta-padding-bloc) - 2px);
+			background: none;
+			border: 2px solid var(--button-outline-color);
+			color: var(--button-outline-color);
+			transition: all 0.3s ease-in-out;
+
+			svg * {
+				transition: all 0.3s ease-in-out;
+				&[fill] {
+					fill: var(--button-outline-color);
+				}
+
+				&[stroke] {
+					stroke: var(--button-outline-color);
+				}
+			}
+
+			&:hover {
+				background-color: var(--button-outline-color);
+				color: var(--white);
+
+				svg * {
+					&[fill] {
+						fill: var(--pure-white);
+					}
+
+					&[stroke] {
+						stroke: var(--pure-white);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.cta {
+		&.bigger {
+			--cta-padding-inline: 12px;
+			--cta-padding-bloc: 18px;
+			min-height: 0px;
 		}
 	}
 }

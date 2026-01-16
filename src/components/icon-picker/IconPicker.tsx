@@ -4,11 +4,13 @@ import { Code } from "./icons/Code";
 import { Csharp } from "./icons/Csharp";
 import { Database } from "./icons/Database";
 import { Document } from "./icons/Document";
+import { Download } from "./icons/Download";
 import { ExternalLink } from "./icons/ExternalLink";
 import { Github } from "./icons/Github";
 import { Hamburger } from "./icons/Hamburger";
 import { LinkedIn } from "./icons/LinkedIn";
 import { Mail } from "./icons/Mail";
+import { MapPin } from "./icons/MapPin";
 import { Moon } from "./icons/Moon";
 import { PHP } from "./icons/PHP";
 import { React } from "./icons/React";
@@ -24,11 +26,13 @@ export type IconType =
 	| "csharp"
 	| "database"
 	| "document"
+	| "download"
 	| "external-link"
 	| "github"
 	| "hamburger"
 	| "linkedin"
 	| "mail"
+	| "map-pin"
 	| "moon"
 	| "php"
 	| "react"
@@ -54,6 +58,8 @@ export const IconPicker = ({ icon }: IconPickerProps) => {
 		return <Database />;
 	} else if (icon === "document") {
 		return <Document />;
+	} else if (icon === "download") {
+		return <Download />;
 	} else if (icon === "external-link") {
 		return <ExternalLink />;
 	} else if (icon === "github") {
@@ -64,6 +70,8 @@ export const IconPicker = ({ icon }: IconPickerProps) => {
 		return <LinkedIn />;
 	} else if (icon === "mail") {
 		return <Mail />;
+	} else if (icon === "map-pin") {
+		return <MapPin />;
 	} else if (icon === "moon") {
 		return <Moon />;
 	} else if (icon === "php") {
