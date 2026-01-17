@@ -10,7 +10,7 @@ export interface SkillsCategoryProps {
 
 export const SkillsCategory = ({ title, items }: SkillsCategoryProps) => {
 	return (
-		<div className={styles["skills-category"]}>
+		<div className={styles["skills-category"] + " fade-in"}>
 			<div className={styles["title-ctn"]}>
 				<span className={styles.line}></span>
 				<h3 className={styles.title}>{title}</h3>

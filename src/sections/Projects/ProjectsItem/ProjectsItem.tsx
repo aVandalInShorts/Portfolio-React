@@ -20,7 +20,7 @@ export const ProjectsItem = ({
 	skills,
 }: ProjectsItemProps) => {
 	return (
-		<div className={styles.item}>
+		<div className={styles.item + " fade-in"}>
 			<div className={styles["item-inner"]}>
 				<div className={styles["items-img-ctn"]}>
 					{!imageUrl && <IconPicker icon="code" />}

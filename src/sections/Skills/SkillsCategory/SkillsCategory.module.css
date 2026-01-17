@@ -1,4 +1,8 @@
 .skills-category {
+	--fade-in-factor: 0%;
+	--fade-in-start: 5%;
+	--fade-in-end: 15%;
+
 	margin-block-start: 55px;
 }
 
