@@ -1,5 +1,5 @@
 import { IconPicker } from "../../../components/icon-picker/IconPicker";
-import { Skill, type SkillProps } from "../../../components/Skill/Skill";
+import { type SkillProps } from "../../Skills/Skill/Skill";
 import styles from "./ProjectsItem.module.css";
 
 export interface ProjectsItemProps {
@@ -38,7 +38,13 @@ export const ProjectsItem = ({
 					{skills && skills.length > 0 && (
 						<div className={styles.skills}>
 							{skills.map((skill, index) => (
-								<Skill key={index} {...skill} />
+								<div
+									key={index}
+									className={styles["skills-item"]}
+									title={skill.name}
+								>
+									<IconPicker icon={skill.icon} />
+								</div>
 							))}
 						</div>
 					)}

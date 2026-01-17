@@ -6,7 +6,9 @@ export const Hero = () => {
 		<section className={styles.hero + " section"}>
 			<div className={styles["hero-inner"] + " section-inner"}>
 				<p className={styles.pretitle}>Hi, my name is</p>
-				<h1 className={styles.name}>François Vandal</h1>
+				<h1 className={styles.name + " gradient-bg"}>
+					François Vandal
+				</h1>
 				<h2 className={styles.title}>I am a Full-Stack Tryhard</h2>
 				<p className={styles.description}>
 					Lorem, ipsum dolor sit amet consectetur adipisicing elit.

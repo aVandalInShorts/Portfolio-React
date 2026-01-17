@@ -15,13 +15,6 @@
 
 .name {
 	margin: 0 0 18px;
-	background: linear-gradient(
-		90deg,
-		var(--gradient-blue) 0%,
-		var(--gradient-light-blue) 100%
-	);
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
 
 .title {

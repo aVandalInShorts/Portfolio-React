@@ -1,0 +1,70 @@
+.skill {
+	--skill-gradient-color: var(--turquoise);
+
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	padding: 30px 24px;
+	border-radius: 16px;
+	background-color: var(--gray-blue);
+	border: 1px solid var(--blue-20);
+	color: #53eafd;
+	font-size: 14px;
+	background: linear-gradient(135deg, #1d293dcc 0%, #0f172bcc 100%);
+	box-shadow: 0 10px 20px 0 transparent;
+
+	transition: all 0.3s ease;
+
+	&:hover {
+		background-color: var(--blue-20);
+		border-color: var(--blue-80);
+		scale: 1.1;
+		box-shadow: 0 15px 20px 0
+			color-mix(in srgb, var(--skill-gradient-color) 30%, transparent);
+	}
+
+	&[data-icon="javascript"] {
+		--skill-gradient-color: #f0db4f;
+	}
+	&[data-icon="angular"] {
+		--skill-gradient-color: #dd0031;
+	}
+	&[data-icon="react"] {
+		--skill-gradient-color: #61dafb;
+	}
+	&[data-icon="vue"] {
+		--skill-gradient-color: #42b883;
+	}
+	&[data-icon="typescript"] {
+		--skill-gradient-color: #3178c6;
+	}
+	&[data-icon="strapi"] {
+		--skill-gradient-color: #4340e5;
+	}
+	&[data-icon="wordpress"] {
+		--skill-gradient-color: #21759b;
+	}
+	&[data-icon="php"] {
+		--skill-gradient-color: #8993be;
+	}
+	&[data-icon="csharp"] {
+		--skill-gradient-color: #68217a;
+	}
+	&[data-icon="github"] {
+		--skill-gradient-color: #333;
+	}
+}
+
+.icon {
+	height: 24px;
+
+	svg {
+		width: 24px;
+		height: 24px;
+	}
+}
+
+.name {
+	font-size: 14px;
+}

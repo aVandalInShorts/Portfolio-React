@@ -7,7 +7,7 @@ export const About = () => {
 			id="about"
 		>
 			<div className={styles["about-inner"] + " section-inner"}>
-				<h2 className={styles.title}>About</h2>
+				<h3 className={styles.title}>About</h3>
 				<div className={styles.description}>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.

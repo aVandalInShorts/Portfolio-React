@@ -5,7 +5,7 @@ export const Contact = () => {
 	return (
 		<section className={styles.contact + " section"} id="contact">
 			<div className={styles["contact-inner"] + " section-inner"}>
-				<h2>Contact</h2>
+				<h3>Let's work together</h3>
 				<p>Blah blah blah</p>
 
 				<a href="mailto:francois.vandal@gmail.com" className="cta">
@@ -16,6 +16,9 @@ export const Contact = () => {
 				<div className={styles.other}>
 					<a href="#">
 						<IconPicker icon="linkedin" />
+					</a>
+					<a href="#">
+						<IconPicker icon="mail" />
 					</a>
 				</div>
 			</div>

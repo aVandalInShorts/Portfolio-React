@@ -46,7 +46,9 @@ export const Projects = () => {
 			id="projects"
 		>
 			<div className={styles.container + " section-inner"}>
-				<h2>Featured Projects</h2>
+				<h3 className={styles.title + " h2 gradient-bg"}>
+					Featured Projects
+				</h3>
 				<p>Projects will be updated soon. Stay tuned!</p>
 
 				<div className={styles.list}>

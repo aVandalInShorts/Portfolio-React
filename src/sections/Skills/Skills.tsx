@@ -36,7 +36,14 @@ export const Skills = () => {
 	return (
 		<section className={styles.skills + " section"} id="skills">
 			<div className={styles["skills-inner"] + " section-inner"}>
-				<h2 className={styles.title}>Technical Skills</h2>
+				<h3 className={styles.title + " h2 gradient-bg"}>
+					Technical Skills
+				</h3>
+
+				<p className={styles.description}>
+					A comprehensive collection of technologies and tools I use
+					to build exceptional web experiences
+				</p>
 
 				<div className={styles.list}>
 					{categories.map((category, index) => (

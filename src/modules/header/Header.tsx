@@ -34,7 +34,9 @@ export const Header = () => {
 			}
 		>
 			<div className={styles["header-inner"] + " section-inner"}>
-				<h1 className={styles.title}>François Vandal</h1>
+				<h1 className={styles.title + " gradient-bg"}>
+					François Vandal
+				</h1>
 				<nav className={styles.nav}>
 					<div className={styles.menu} ref={menuRef}>
 						<a href="#about" onClick={() => setIsMenuOpen(false)}>

@@ -3,6 +3,10 @@
 	padding-block: 45px;
 }
 
+.title {
+	margin-block-start: 0;
+}
+
 .list {
 	display: flex;
 	flex-flow: row wrap;
