@@ -42,6 +42,29 @@ export const Hero = () => {
 					</a>
 				</div>
 			</div>
+			<div className={styles["animated-stuff"]}>
+				<div
+					className={`${styles["animated-text"]} ${styles["animated-text__first"]}`}
+				>
+					{"{}"}
+				</div>
+				<div
+					className={`${styles["animated-text"]} ${styles["animated-text__second"]}`}
+				>
+					{"[ ]"}
+				</div>
+				<div
+					className={`${styles["animated-text"]} ${styles["animated-text__third"]}`}
+				>
+					{"< />"}
+				</div>
+				<div
+					className={`${styles["line"]} ${styles["line__first"]}`}
+				></div>
+				<div
+					className={`${styles["line"]} ${styles["line__second"]}`}
+				></div>
+			</div>
 		</section>
 	);
 };
