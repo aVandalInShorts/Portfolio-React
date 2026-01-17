@@ -26,48 +26,59 @@ export const Header = () => {
 	}, [isMenuOpen]);
 
 	return (
-		<header
-			className={
-				styles.header +
-				" section" +
-				(isMenuOpen ? ` ${styles["menu-open"]}` : "")
-			}
-		>
-			<div className={styles["header-inner"] + " section-inner"}>
-				<h1 className={styles.title + " gradient-bg"}>
-					François Vandal
-				</h1>
-				<nav className={styles.nav}>
-					<div className={styles.menu} ref={menuRef}>
-						<a href="#about" onClick={() => setIsMenuOpen(false)}>
-							About
-						</a>
-						<a href="#skills" onClick={() => setIsMenuOpen(false)}>
-							Skills
-						</a>
-						<a
-							href="#projects"
-							onClick={() => setIsMenuOpen(false)}
+		<header className={styles.header}>
+			<div
+				className={
+					styles["header-inner"] +
+					" section" +
+					(isMenuOpen ? ` ${styles["menu-open"]}` : "")
+				}
+			>
+				<div className={styles["header-content"] + " section-inner"}>
+					<h1 className={styles.title + " gradient-bg"}>
+						François Vandal
+					</h1>
+					<nav className={styles.nav}>
+						<div className={styles.menu} ref={menuRef}>
+							<a
+								href="#about"
+								onClick={() => setIsMenuOpen(false)}
+							>
+								About
+							</a>
+							<a
+								href="#skills"
+								onClick={() => setIsMenuOpen(false)}
+							>
+								Skills
+							</a>
+							<a
+								href="#projects"
+								onClick={() => setIsMenuOpen(false)}
+							>
+								Projects
+							</a>
+							<a
+								href="#contact"
+								onClick={() => setIsMenuOpen(false)}
+							>
+								Contact
+							</a>
+						</div>
+						<button className={styles["lang-btn"]}>EN</button>
+						<button className={styles["theme-btn"]}>
+							<IconPicker icon="sun" />
+						</button>
+						<button
+							className={styles["menu-btn"]}
+							onClick={() => setIsMenuOpen(!isMenuOpen)}
+							ref={menuBtnRef}
 						>
-							Projects
-						</a>
-						<a href="#contact" onClick={() => setIsMenuOpen(false)}>
-							Contact
-						</a>
-					</div>
-					<button className={styles["lang-btn"]}>EN</button>
-					<button className={styles["theme-btn"]}>
-						<IconPicker icon="sun" />
-					</button>
-					<button
-						className={styles["menu-btn"]}
-						onClick={() => setIsMenuOpen(!isMenuOpen)}
-						ref={menuBtnRef}
-					>
-						{isMenuOpen && <IconPicker icon="close" />}
-						{!isMenuOpen && <IconPicker icon="hamburger" />}
-					</button>
-				</nav>
+							{isMenuOpen && <IconPicker icon="close" />}
+							{!isMenuOpen && <IconPicker icon="hamburger" />}
+						</button>
+					</nav>
+				</div>
 			</div>
 		</header>
 	);

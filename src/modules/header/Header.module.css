@@ -1,15 +1,25 @@
 .header {
+	@supports (container-type: scroll-state) {
+		container-type: scroll-state;
+		container-name: header;
+	}
+
 	position: sticky;
 	z-index: 10;
 	top: 0;
+}
+
+.header-inner {
+	width: 100%;
 	background-color: var(--dark-blue-50);
 	border-bottom: 1px solid var(--blue-20);
 	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
 		0 4px 6px -4px rgba(0, 0, 0, 0.1);
 	height: var(--header-height);
+	transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out;
 }
 
-.header-inner {
+.header-content {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -90,7 +100,18 @@
 }
 
 @media screen and (min-width: 768px) {
+	@supports (container-type: scroll-state) {
+		.header-inner {
+			@container header scroll-state(stuck: top) {
+				--header-height: 60px;
+				background-color: var(--dark-blue);
+			}
+		}
+	}
+
 	.menu {
+		scroll-target-group: auto;
+
 		a {
 			&:after {
 				content: "";
@@ -106,7 +127,8 @@
 				transition: scale 0.3s ease-in-out;
 			}
 
-			&:hover {
+			&:hover,
+			&:target-current {
 				color: var(--gradient-blue);
 
 				&:after {

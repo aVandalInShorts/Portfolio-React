@@ -1,7 +1,8 @@
 @layer variables {
 	:root {
 		--dark-blue: #0f172b;
-		--dark-blue-50: #0f172bcc;
+		--dark-blue-50: #0f172b80;
+		--dark-blue-80: #0f172bcc;
 		--dark-blue-alt-50: #1d293d80;
 		--dark-blue-alt-80: #1d293dcd;
 		--blue: #2b7fff;
