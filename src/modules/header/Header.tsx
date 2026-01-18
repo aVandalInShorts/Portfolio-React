@@ -4,6 +4,7 @@ import styles from "./Header.module.css";
 
 export const Header = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
+	const [themeState, setThemeState] = useState<"light" | "dark" | null>(null);
 	const menuBtnRef = useRef<HTMLButtonElement>(null);
 	const menuRef = useRef<HTMLDivElement>(null);
 
@@ -24,12 +25,7 @@ export const Header = () => {
 	}
 
 	function toggleColorTheme() {
-		document
-			.querySelector("html")
-			?.setAttribute(
-				"data-theme",
-				getActiveColorScheme() === "dark" ? "light" : "dark",
-			);
+		setThemeState(getActiveColorScheme() === "dark" ? "light" : "dark");
 	}
 
 	useEffect(() => {
@@ -49,6 +45,14 @@ export const Header = () => {
 			document.removeEventListener("mousedown", handleClickOutside);
 		}
 	}, [isMenuOpen]);
+
+	useEffect(() => {
+		if (themeState) {
+			document
+				.querySelector("html")
+				?.setAttribute("data-theme", themeState);
+		}
+	}, [themeState]);
 
 	return (
 		<header className={styles.header}>
@@ -94,7 +98,9 @@ export const Header = () => {
 							className={styles["theme-btn"]}
 							onClick={toggleColorTheme}
 						>
-							<IconPicker icon="sun" />
+							<IconPicker
+								icon={themeState === "dark" ? "sun" : "moon"}
+							/>
 						</button>
 						<button className={styles["lang-btn"]}>EN</button>
 						<button

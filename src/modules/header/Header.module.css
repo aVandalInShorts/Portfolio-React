@@ -19,6 +19,8 @@
 		0 4px 6px -4px var(--header-inner-shadow-color);
 	height: var(--header-height);
 	transition:
+		box-shadow 0.3s ease-in-out,
+		border-color 0.3s ease-in-out,
 		background-color 0.3s ease-in-out,
 		height 0.3s ease-in-out;
 }
@@ -132,7 +134,10 @@
 				background-color: var(--gradient-blue);
 				scale: 0;
 				transform-origin: center left;
-				transition: scale 0.3s ease-in-out;
+				transition:
+					scale 0.3s ease-in-out,
+					color 0.3s ease-in-out,
+					background-color 0.3s ease-in-out;
 			}
 
 			&:hover,
@@ -195,6 +200,8 @@
 			translate 0.3s ease-in-out,
 			opacity 0.3s ease-in-out,
 			visibility 0s ease-in-out 0.3s;
+		border-color: 0.3s ease-in-out;
+		background-color: 0.3s ease-in-out;
 
 		a {
 			padding: 10px 15px;

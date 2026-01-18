@@ -82,6 +82,7 @@
 .animated-stuff {
 	position: absolute;
 	inset: 0;
+	overflow: hidden;
 }
 
 .animated-text,

@@ -1,24 +1,26 @@
 @layer fade {
-	@supports (animation-timeline: view()) and
-		(animation-range: contain 0% contain 100%) {
-		.fade-in {
-			--fade-in-factor: 10%;
-			--fade-in-start: 0%;
-			--fade-in-end: 15%;
+	@media screen and (min-width: 1024px) {
+		@supports (animation-timeline: view()) and
+			(animation-range: contain 0% contain 100%) {
+			.fade-in {
+				--fade-in-factor: 10%;
+				--fade-in-start: 0%;
+				--fade-in-end: 15%;
 
-			opacity: 0;
-			animation: fade-in 0.5s linear forwards;
-			animation-timeline: view();
-			animation-range: contain
-				calc(
-					var(--fade-in-start) +
-						((sibling-index() - 1) * var(--fade-in-factor))
-				)
-				contain
-				calc(
-					var(--fade-in-end) +
-						((sibling-index() - 1) * var(--fade-in-factor))
-				);
+				opacity: 0;
+				animation: fade-in 0.5s linear forwards;
+				animation-timeline: view();
+				animation-range: contain
+					calc(
+						var(--fade-in-start) +
+							((sibling-index() - 1) * var(--fade-in-factor))
+					)
+					contain
+					calc(
+						var(--fade-in-end) +
+							((sibling-index() - 1) * var(--fade-in-factor))
+					);
+			}
 		}
 	}
 }

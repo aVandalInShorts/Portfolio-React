@@ -35,6 +35,7 @@
 	justify-content: center;
 	height: 190px;
 	background-color: light-dark(var(--white), var(--dark-blue-50));
+	transition: background-color 0.3s ease;
 
 	svg {
 		width: 100px;
@@ -76,6 +77,7 @@
 	width: 50px;
 	height: 50px;
 	border-radius: 10px;
+	transition: background-color 0.3s ease;
 
 	svg {
 		width: 24px;
@@ -102,8 +104,13 @@
 			height: 20px;
 
 			* {
-				fill: light-dark(var(--dark-gray), var(--gray));
-				transition: fill 0.3s ease;
+				&[fill] {
+					fill: light-dark(var(--dark-gray), var(--gray));
+				}
+				&[stroke] {
+					stroke: light-dark(var(--dark-gray), var(--gray));
+				}
+				transition: all 0.3s ease;
 			}
 		}
 
@@ -111,7 +118,12 @@
 			color: var(--gradient-blue);
 
 			svg * {
-				fill: var(--gradient-blue);
+				&[fill] {
+					fill: var(--gradient-blue);
+				}
+				&[stroke] {
+					stroke: var(--gradient-blue);
+				}
 			}
 		}
 	}

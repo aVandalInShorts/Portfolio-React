@@ -21,6 +21,7 @@
 
 	p {
 		color: light-dark(var(--dark-gray), var(--white));
+		transition: color 0.3s ease;
 	}
 }
 

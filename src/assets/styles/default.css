@@ -4,6 +4,9 @@
 		font-family: var(--font-family);
 		color: var(--white);
 		scroll-behavior: smooth;
+		transition:
+			background-color 0.3s ease,
+			color 0.3s ease;
 
 		&::target-text {
 			background-color: #22d3ee;
@@ -41,6 +44,7 @@
 		line-height: 1.2;
 		margin-block-end: 16px;
 		text-wrap: balance;
+		transition: color 0.3s ease;
 	}
 
 	h1,
@@ -72,6 +76,7 @@
 		orphans: 3;
 		widows: 2;
 		max-width: 80ch;
+		transition: color 0.3s ease;
 
 		&:first-child {
 			margin-block-start: 0;

@@ -6,6 +6,7 @@
 			[viewport-start] minmax(var(--mobile-padding), 1fr)
 			[main-start] min(100% - 60px, 1100px)
 			[main-end] minmax(var(--mobile-padding), 1fr) [viewport-end];
+		transition: background-color 0.3s ease;
 
 		&.section-alt-bg {
 			background-color: light-dark(
