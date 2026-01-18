@@ -13,15 +13,17 @@
 	font-size: 14px;
 	background: linear-gradient(135deg, #1d293dcc 0%, #0f172bcc 100%);
 	box-shadow: 0 10px 20px 0 transparent;
-
 	transition: all 0.3s ease;
 
 	&:hover {
 		background-color: var(--blue-20);
 		border-color: var(--blue-80);
-		scale: 1.1;
 		box-shadow: 0 15px 20px 0
 			color-mix(in srgb, var(--skill-gradient-color) 30%, transparent);
+
+		@media not (prefers-reduced-motion: reduce) {
+			scale: 1.1;
+		}
 	}
 
 	&[data-icon="javascript"] {

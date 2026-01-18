@@ -73,11 +73,13 @@
 			}
 		}
 
-		&:hover {
-			translate: 15px 0;
+		@media not (prefers-reduced-motion: reduce) {
+			&:hover {
+				translate: 15px 0;
 
-			&:before {
-				scale: 1.7;
+				&:before {
+					scale: 1.7;
+				}
 			}
 		}
 	}
