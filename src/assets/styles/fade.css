@@ -3,8 +3,8 @@
 		(animation-range: contain 0% contain 100%) {
 		.fade-in {
 			--fade-in-factor: 10%;
-			--fade-in-start: 5%;
-			--fade-in-end: 20%;
+			--fade-in-start: 0%;
+			--fade-in-end: 15%;
 
 			opacity: 0;
 			animation: fade-in 0.5s linear forwards;

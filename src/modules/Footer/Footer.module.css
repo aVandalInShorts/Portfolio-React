@@ -1,11 +1,13 @@
 .footer {
 	align-items: center;
 	height: 88px;
-	background-color: var(--dark-blue-alt-50);
+	background-color: light-dark(var(--pure-white), var(--dark-blue-alt-50));
 	text-align: center;
+	border-top: 1px solid light-dark(var(--white), var(--dark-blue-alt-50));
 
 	p {
-		margin: 0;
+		margin: 0 auto;
+		color: light-dark(var(--dark-gray-alt), var(--gray));
 	}
 }
 

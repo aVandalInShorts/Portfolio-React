@@ -21,13 +21,13 @@
 }
 
 .title {
-	color: var(--gray);
+	color: light-dark(var(--dark-gray-alt), var(--gray));
 	margin-block: 0 36px;
 }
 
 .description {
 	margin-block: 0;
-	color: var(--gray);
+	color: light-dark(var(--dark-gray-alt), var(--gray));
 	max-width: 60ch;
 	font-size: 20px;
 }
@@ -56,10 +56,10 @@
 
 			* {
 				&[fill] {
-					fill: var(--gray);
+					fill: light-dark(var(--dark-gray-alt), var(--gray));
 				}
 				&[stroke] {
-					stroke: var(--gray);
+					stroke: light-dark(var(--dark-gray-alt), var(--gray));
 				}
 
 				transition: all 0.3s ease;

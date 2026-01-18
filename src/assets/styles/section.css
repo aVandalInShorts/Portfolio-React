@@ -6,13 +6,16 @@
 			[viewport-start] minmax(var(--mobile-padding), 1fr)
 			[main-start] min(100% - 60px, 1100px)
 			[main-end] minmax(var(--mobile-padding), 1fr) [viewport-end];
+
+		&.section-alt-bg {
+			background-color: light-dark(
+				var(--pure-white),
+				var(--dark-blue-alt-50)
+			);
+		}
 	}
 
 	.section-inner {
 		grid-column: main-start / main-end;
-	}
-
-	.section-alt-bg {
-		background-color: var(--dark-blue-alt-50);
 	}
 }

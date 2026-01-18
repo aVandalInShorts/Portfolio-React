@@ -7,6 +7,31 @@ export const Header = () => {
 	const menuBtnRef = useRef<HTMLButtonElement>(null);
 	const menuRef = useRef<HTMLDivElement>(null);
 
+	function getSystemPrefersDark() {
+		return (
+			window.matchMedia &&
+			window.matchMedia("(prefers-color-scheme: dark)").matches
+		);
+	}
+
+	function getActiveColorScheme() {
+		const stored = document
+			.querySelector("html")
+			?.getAttribute("data-theme");
+		if (stored === "light" || stored === "dark") return stored;
+		// no stored user preference -> return actual system preference
+		return getSystemPrefersDark() ? "dark" : "light";
+	}
+
+	function toggleColorTheme() {
+		document
+			.querySelector("html")
+			?.setAttribute(
+				"data-theme",
+				getActiveColorScheme() === "dark" ? "light" : "dark",
+			);
+	}
+
 	useEffect(() => {
 		function handleClickOutside(event: MouseEvent) {
 			if (
@@ -65,10 +90,13 @@ export const Header = () => {
 								Contact
 							</a>
 						</div>
-						<button className={styles["lang-btn"]}>EN</button>
-						<button className={styles["theme-btn"]}>
+						<button
+							className={styles["theme-btn"]}
+							onClick={toggleColorTheme}
+						>
 							<IconPicker icon="sun" />
 						</button>
+						<button className={styles["lang-btn"]}>EN</button>
 						<button
 							className={styles["menu-btn"]}
 							onClick={() => setIsMenuOpen(!isMenuOpen)}

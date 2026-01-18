@@ -1,6 +1,6 @@
 @layer default {
 	html {
-		background-color: var(--dark-blue);
+		background-color: light-dark(var(--white-alt), var(--dark-blue));
 		font-family: var(--font-family);
 		color: var(--white);
 		scroll-behavior: smooth;
@@ -13,6 +13,14 @@
 		&::selection {
 			background-color: #3b82f6;
 			color: #e0f2fe;
+		}
+
+		&[data-theme="dark"] {
+			color-scheme: dark;
+		}
+
+		&[data-theme="light"] {
+			color-scheme: light;
 		}
 	}
 
@@ -28,7 +36,7 @@
 	.h5,
 	h6,
 	.h6 {
-		color: var(--pure-white);
+		color: light-dark(var(--black), var(--pure-white));
 		font-weight: 700;
 		line-height: 1.2;
 		margin-block-end: 16px;
@@ -59,7 +67,7 @@
 	}
 
 	p {
-		color: var(--gray);
+		color: light-dark(var(--dark-gray), var(--gray));
 		margin-block: 16px;
 		orphans: 3;
 		widows: 2;

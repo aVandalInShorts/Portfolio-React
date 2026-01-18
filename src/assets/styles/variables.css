@@ -1,5 +1,7 @@
 @layer variables {
 	:root {
+		color-scheme: light dark;
+
 		--dark-blue: #0f172b;
 		--dark-blue-50: #0f172b80;
 		--dark-blue-80: #0f172bcc;
@@ -18,9 +20,15 @@
 		--gradient-light-blue: #00d3f2;
 
 		--pure-white: #ffffff;
+		--pure-white-95: #fffffff2;
 		--white: #d1d5dc;
 		--white-20: #d1d5dc33;
+		--white-alt: #f3f4f6;
 		--gray: #99a1af;
+		--black: #101828;
+
+		--dark-gray: #364153;
+		--dark-gray-alt: #4a5565;
 
 		--font-family: "Arial", "Helvetica", sans-serif;
 		--font-family-mono: "Inconsolata", "Courier New", Courier, monospace;

@@ -6,12 +6,19 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: 24px;
 	text-align: center;
 
 	> * {
 		margin: 0;
 	}
+}
+
+.title {
+	margin-block-end: 16px;
+}
+
+.cta {
+	margin-block: 32px;
 }
 
 .other {
@@ -27,20 +34,28 @@
 		border-radius: 100%;
 		height: 48px;
 		aspect-ratio: 1;
-		background-color: var(--dark-blue-alt-50);
-		transition: background-color 0.3s ease;
+		background-color: light-dark(
+			var(--pure-white),
+			var(--dark-blue-alt-50)
+		);
+		border: 2px solid light-dark(var(--white), var(--dark-blue-alt-50));
+		transition: all 0.4s ease;
 
 		svg {
 			width: 24px;
 			height: 24px;
 
 			* {
-				fill: var(--gray);
+				fill: light-dark(var(--dark-gray-alt), var(--gray));
 			}
 		}
 
 		&:hover {
-			background-color: var(--dark-blue-alt-80);
+			background-color: light-dark(
+				var(--pure-white),
+				var(--dark-blue-alt-80)
+			);
+			border-color: var(--gradient-light-blue);
 		}
 	}
 }

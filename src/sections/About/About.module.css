@@ -20,7 +20,7 @@
 	grid-area: description;
 
 	p {
-		color: var(--white);
+		color: light-dark(var(--dark-gray), var(--white));
 	}
 }
 
