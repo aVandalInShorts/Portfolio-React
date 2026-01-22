@@ -6,6 +6,7 @@ import { Database } from "./icons/Database";
 import { Document } from "./icons/Document";
 import { Download } from "./icons/Download";
 import { ExternalLink } from "./icons/ExternalLink";
+import { Favicon } from "./icons/Favicon";
 import { Github } from "./icons/Github";
 import { Hamburger } from "./icons/Hamburger";
 import { LinkedIn } from "./icons/LinkedIn";
@@ -28,6 +29,7 @@ export type IconType =
 	| "document"
 	| "download"
 	| "external-link"
+	| "favicon"
 	| "github"
 	| "hamburger"
 	| "linkedin"
@@ -62,6 +64,8 @@ export const IconPicker = ({ icon }: IconPickerProps) => {
 		return <Download />;
 	} else if (icon === "external-link") {
 		return <ExternalLink />;
+	} else if (icon === "favicon") {
+		return <Favicon />;
 	} else if (icon === "github") {
 		return <Github />;
 	} else if (icon === "hamburger") {

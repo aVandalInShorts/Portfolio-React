@@ -6,10 +6,12 @@ import { Contact } from "./sections/Contact/Contact";
 import { Hero } from "./sections/Hero/Hero";
 import { Projects } from "./sections/Projects/Projects";
 import { Skills } from "./sections/Skills/Skills";
-import { getPage } from "./api/strapi";
+import { Loading } from "./modules/Loading/Loading";
+// import { getPage } from "./api/strapi";
 
 function App() {
 	const [homePageData, setHomePageData] = useState(null);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		const params = new URLSearchParams();
@@ -25,8 +27,14 @@ function App() {
 			"*",
 		);
 
-		getPage("homepage", Object.fromEntries(params))
-			.then(setHomePageData)
+		fetch(
+			`${import.meta.env.VITE_STRAPI_API_URL}api/homepage?${params.toString()}`,
+		)
+			.then((response) => response.json())
+			.then((data) => {
+				setHomePageData(data);
+				setLoading(false);
+			})
 			.catch(console.error);
 	}, []);
 
@@ -36,13 +44,18 @@ function App() {
 
 	return (
 		<>
-			<Header />
-			<Hero />
-			<About />
-			<Skills />
-			<Projects />
-			<Contact />
-			<Footer />
+			{loading && <Loading />}
+			{!loading && (
+				<>
+					<Header />
+					<Hero />
+					<About />
+					<Skills />
+					<Projects />
+					<Contact />
+					<Footer />
+				</>
+			)}
 		</>
 	);
 }
