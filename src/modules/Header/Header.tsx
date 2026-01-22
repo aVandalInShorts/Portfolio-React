@@ -2,7 +2,12 @@ import { useEffect, useRef, useState } from "react";
 import { IconPicker } from "../../components/icon-picker/IconPicker";
 import styles from "./Header.module.css";
 
-export const Header = () => {
+export interface headerProps {
+	title: string;
+	nav: Array<{ label: string; hash: string }>;
+}
+
+export const Header = (props: headerProps) => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [themeState, setThemeState] = useState<"light" | "dark" | null>(null);
 	const menuBtnRef = useRef<HTMLButtonElement>(null);
@@ -65,34 +70,25 @@ export const Header = () => {
 			>
 				<div className={styles["header-content"] + " section-inner"}>
 					<h1 className={styles.title + " gradient-bg"}>
-						François Vandal
+						{props.title}
 					</h1>
 					<nav className={styles.nav}>
 						<div className={styles.menu} ref={menuRef}>
-							<a
-								href="#about"
-								onClick={() => setIsMenuOpen(false)}
-							>
-								About
-							</a>
-							<a
-								href="#skills"
-								onClick={() => setIsMenuOpen(false)}
-							>
-								Skills
-							</a>
-							<a
-								href="#projects"
-								onClick={() => setIsMenuOpen(false)}
-							>
-								Projects
-							</a>
-							<a
-								href="#contact"
-								onClick={() => setIsMenuOpen(false)}
-							>
-								Contact
-							</a>
+							{props.nav?.map((item, index) => {
+								if (item.hash === "" || item.label === "") {
+									return null;
+								}
+
+								return (
+									<a
+										href={`#${item.hash}`}
+										onClick={() => setIsMenuOpen(false)}
+										key={index}
+									>
+										{item.label}
+									</a>
+								);
+							})}
 						</div>
 						<button
 							className={styles["theme-btn"]}
