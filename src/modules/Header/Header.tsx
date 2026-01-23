@@ -3,8 +3,13 @@ import { IconPicker } from "../../components/icon-picker/IconPicker";
 import styles from "./Header.module.css";
 
 export interface headerProps {
-	title: string;
-	nav: Array<{ label: string; hash: string }>;
+	title?: string;
+	nav: navProps[];
+}
+
+export interface navProps {
+	label: string;
+	hash: string;
 }
 
 export const Header = (props: headerProps) => {
@@ -25,7 +30,6 @@ export const Header = (props: headerProps) => {
 			.querySelector("html")
 			?.getAttribute("data-theme");
 		if (stored === "light" || stored === "dark") return stored;
-		// no stored user preference -> return actual system preference
 		return getSystemPrefersDark() ? "dark" : "light";
 	}
 

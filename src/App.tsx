@@ -1,120 +1,18 @@
 import { useEffect, useState } from "react";
 import { Footer } from "./modules/Footer/Footer";
-import { Header } from "./modules/Header/Header";
+import { Header, type navProps } from "./modules/Header/Header";
 import { About } from "./sections/About/About";
 import { Contact } from "./sections/Contact/Contact";
 import { Hero } from "./sections/Hero/Hero";
 import { Projects } from "./sections/Projects/Projects";
 import { Skills } from "./sections/Skills/Skills";
 import { Loading } from "./modules/Loading/Loading";
-
-interface defaultStrapiFields {
-	createdAt: string;
-	documentId: string;
-	id: number;
-	locale?: string;
-	publishedAt: string;
-	updatedAt: string;
-}
-
-interface appProps extends defaultStrapiFields {
-	Content:
-		| heroContent
-		| aboutContent
-		| technicalSkillsContent
-		| featureProjectsContent
-		| contactContent;
-	HeaderTitle: string;
-	FooterCopyrights: string;
-}
-
-interface componentBaseProps {
-	__component: string;
-	id: number;
-	Hash?: string;
-	MenuValue?: string;
-}
-
-interface heroContent extends componentBaseProps {
-	__component: "blocks.hero";
-	Pretitle: string;
-	Name: string;
-	Title: string;
-	Description: string;
-	Buttons: buttonRepeater[];
-	socials: socialsRepeater[];
-}
-
-interface aboutContent extends componentBaseProps {
-	__component: "blocks.about";
-	title: string;
-	Text: descriptionRepeater[];
-	List: Array<{ id: number; Title: string; Text: string }>;
-}
-
-interface skillRepeater extends defaultStrapiFields {
-	Title: string;
-	Icon?: iconRepeater;
-}
-
-interface descriptionRepeater {
-	type: string;
-	children: Array<{ type: string; text: string }>;
-}
-
-interface iconRepeater extends defaultStrapiFields {
-	value: string;
-}
-
-interface socialsRepeater extends defaultStrapiFields {
-	Name: string;
-	URL: string;
-	icons: iconRepeater;
-}
-
-interface buttonRepeater {
-	IsDownload?: boolean;
-	Type: string;
-	URL: string;
-	Value: string;
-	id: number;
-}
-
-interface projectRepeater extends defaultStrapiFields {
-	Title: string;
-	Description: string;
-	GitURL?: string;
-	ProjectURL?: string;
-}
-
-interface technicalSkillsContent extends componentBaseProps {
-	__component: "blocks.technical-skills";
-	Title: string;
-	Description: string;
-	Categories: Array<{
-		id: number;
-		title: string;
-		skills: skillRepeater[];
-	}>;
-}
-
-interface featureProjectsContent extends componentBaseProps {
-	__component: "blocks.features-projects";
-	Title: string;
-	Description: string;
-	Projects?: projectRepeater[];
-}
-
-interface contactContent extends componentBaseProps {
-	__component: "blocks.contact";
-	Title: string;
-	Description: descriptionRepeater[];
-	Buttons: buttonRepeater[];
-}
+import type { appProps, ContentBlock } from "./strapiProps.interface";
 
 function App() {
 	const [homePageData, setHomePageData] = useState<appProps | null>(null);
 	const [loading, setLoading] = useState(true);
+	const [navItems, setNavItems] = useState<navProps[]>([]);
 
 	useEffect(() => {
 		const params = new URLSearchParams();
@@ -151,6 +49,16 @@ function App() {
 			.then((data) => {
 				setHomePageData(data.data);
 				setLoading(false);
+
+				setNavItems(
+					(data.data?.Content ?? []).map(
+						(block: ContentBlock) =>
+							({
+								label: block.MenuValue,
+								hash: block.Hash,
+							}) as navProps,
+					),
+				);
 			})
 			.catch(console.error);
 	}, []);
@@ -164,13 +72,13 @@ function App() {
 			{loading && <Loading />}
 			{!loading && (
 				<>
-					<Header title={""} nav={[]} />
+					<Header title={homePageData?.HeaderTitle} nav={navItems} />
 					<Hero />
 					<About />
 					<Skills />
 					<Projects />
 					<Contact />
-					<Footer />
+					<Footer copyright={homePageData?.FooterCopyrights ?? ""} />
 				</>
 			)}
 		</>

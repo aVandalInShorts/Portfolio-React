@@ -4,7 +4,8 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "vite && npm run strapi develop",
+		"dev": "vite",
+		"strapi": "cd ../portfolio-CMS && npm run strapi develop",
 		"build": "tsc -b && vite build",
 		"lint": "eslint .",
 		"preview": "vite preview"
