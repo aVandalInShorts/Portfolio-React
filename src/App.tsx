@@ -34,8 +34,8 @@ function App() {
 			"*",
 		);
 		params.append(
-			"populate[Content][on][blocks.hero][populate]",
-			"socials",
+			"populate[Content][on][blocks.hero][populate][socials][populate]",
+			"*",
 		);
 		params.append(
 			"populate[Content][on][blocks.technical-skills][populate][Categories][populate][skills][populate]",
@@ -73,11 +73,23 @@ function App() {
 			{!loading && (
 				<>
 					<Header title={homePageData?.HeaderTitle} nav={navItems} />
-					<Hero />
-					<About />
-					<Skills />
-					<Projects />
-					<Contact />
+					{homePageData?.Content.map((block) => {
+						if (block.__component === "blocks.hero") {
+							return <Hero {...block} key={block.id} />;
+						} else if (block.__component === "blocks.about") {
+							return <About {...block} key={block.id} />;
+						} else if (
+							block.__component === "blocks.technical-skills"
+						) {
+							return <Skills {...block} key={block.id} />;
+						} else if (
+							block.__component === "blocks.features-projects"
+						) {
+							return <Projects {...block} key={block.id} />;
+						} else if (block.__component === "blocks.contact") {
+							return <Contact {...block} key={block.id} />;
+						}
+					})}
 					<Footer copyright={homePageData?.FooterCopyrights ?? ""} />
 				</>
 			)}

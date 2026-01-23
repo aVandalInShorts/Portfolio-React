@@ -1,44 +1,33 @@
+import type { aboutContent } from "../../strapiProps.interface";
 import styles from "./About.module.css";
 
-export const About = () => {
+export const About = (props: aboutContent) => {
 	return (
 		<section
 			className={styles.about + " section section-alt-bg"}
 			id="about"
 		>
 			<div className={styles["about-inner"] + " section-inner"}>
-				<h3 className={styles.title}>About</h3>
+				<h3 className={styles.title}>{props.title}</h3>
 				<div className={styles.description}>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua.
-					</p>
-					<p>
-						Ut enim ad minim veniam, quis nostrud exercitation
-						ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					</p>
+					{props.Text.map((block) => (
+						<p key={block.type + block.children[0].text}>
+							{block.children[0].text}
+						</p>
+					))}
 				</div>
-				<ul className={styles.list}>
-					<li>
-						<div className={`${styles["list-title"]} h3`}>
-							1000 d'expérience!
-						</div>
-						<p>Dans le domaine du développement web.</p>
-					</li>
-					<li>
-						<div className={`${styles["list-title"]} h3`}>
-							Plein de projets!
-						</div>
-						<p>Dans le domaine du développement web.</p>
-					</li>
-					<li>
-						<div className={`${styles["list-title"]} h3`}>
-							1000 d'expérience!
-						</div>
-						<p>Dans le domaine du développement web.</p>
-					</li>
-				</ul>
+				{props.List && (
+					<ul className={styles.list}>
+						{props.List.map((item, index) => (
+							<li key={index}>
+								<div className={`${styles["list-title"]} h3`}>
+									{item.Title}
+								</div>
+								<p>{item.Text}</p>
+							</li>
+						))}
+					</ul>
+				)}
 			</div>
 		</section>
 	);

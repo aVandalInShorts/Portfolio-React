@@ -1,21 +1,20 @@
-import {
-	IconPicker,
-	type IconType,
-} from "../../../components/icon-picker/IconPicker";
+import { IconPicker } from "../../../components/icon-picker/IconPicker";
+import type { skillRepeater } from "../../../strapiProps.interface";
 import styles from "./Skill.module.css";
 
-export interface SkillProps {
-	name: string;
-	icon: IconType;
-}
-
-export const Skill = ({ name, icon }: SkillProps) => {
+export const Skill = ({ Title, icon }: skillRepeater) => {
 	return (
-		<div className={styles.skill} title={name} data-icon={icon}>
-			<div className={`${styles.icon} icon-${icon}`}>
-				<IconPicker icon={icon} />
-			</div>
-			<div className={styles.name}>{name}</div>
+		<div
+			className={styles.skill}
+			title={Title}
+			data-icon={icon?.value || ""}
+		>
+			{icon && (
+				<div className={`${styles.icon} icon-${icon.value}`}>
+					<IconPicker icon={icon.value} />
+				</div>
+			)}
+			<div className={styles.name}>{Title}</div>
 		</div>
 	);
 };

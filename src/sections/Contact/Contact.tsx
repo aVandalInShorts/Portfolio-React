@@ -1,12 +1,19 @@
 import { IconPicker } from "../../components/icon-picker/IconPicker";
+import type { contactContent } from "../../strapiProps.interface";
 import styles from "./Contact.module.css";
 
-export const Contact = () => {
+export const Contact = (props: contactContent) => {
 	return (
 		<section className={styles.contact + " section"} id="contact">
 			<div className={styles["contact-inner"] + " section-inner"}>
-				<h3 className={styles.title}>Let's work together</h3>
-				<p className={styles.description}>Blah blah blah</p>
+				<h3 className={styles.title}>{props.Title}</h3>
+				<div className={styles.description}>
+					{props.Description.map((block) => (
+						<p key={block.type + block.children[0].text}>
+							{block.children[0].text}
+						</p>
+					))}
+				</div>
 
 				<a
 					href="mailto:francois.vandal@gmail.com"

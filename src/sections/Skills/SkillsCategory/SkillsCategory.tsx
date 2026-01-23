@@ -1,14 +1,14 @@
-import type { IconType } from "../../../components/icon-picker/IconPicker";
-import { Skill, type SkillProps } from "../Skill/Skill";
+import type {
+	skillRepeater,
+	technicalSkillsCategoryContent,
+} from "../../../strapiProps.interface";
+import { Skill } from "../Skill/Skill";
 import styles from "./SkillsCategory.module.css";
 
-export interface SkillsCategoryProps {
-	title: string;
-	icon: IconType;
-	items: SkillProps[];
-}
-
-export const SkillsCategory = ({ title, items }: SkillsCategoryProps) => {
+export const SkillsCategory = ({
+	title,
+	skills,
+}: technicalSkillsCategoryContent) => {
 	return (
 		<div className={styles["skills-category"] + " fade-in"}>
 			<div className={styles["title-ctn"]}>
@@ -17,8 +17,8 @@ export const SkillsCategory = ({ title, items }: SkillsCategoryProps) => {
 				<span className={styles.line}></span>
 			</div>
 			<div className={styles.items}>
-				{items.map((item, index) => (
-					<Skill key={index} name={item.name} icon={item.icon} />
+				{skills.map((skill: skillRepeater) => (
+					<Skill key={skill.id} {...skill} />
 				))}
 			</div>
 		</div>

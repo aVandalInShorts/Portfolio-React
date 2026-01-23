@@ -1,3 +1,5 @@
+import type { IconType } from "./components/icon-picker/IconPicker";
+
 export interface defaultStrapiFields {
 	createdAt: string;
 	documentId: string;
@@ -33,8 +35,8 @@ export interface heroContent extends componentBaseProps {
 	Name: string;
 	Title: string;
 	Description: string;
-	Buttons: buttonRepeater[];
-	socials: socialsRepeater[];
+	Buttons?: buttonRepeater[];
+	socials?: socialsRepeater[];
 }
 
 export interface aboutContent extends componentBaseProps {
@@ -46,7 +48,7 @@ export interface aboutContent extends componentBaseProps {
 
 export interface skillRepeater extends defaultStrapiFields {
 	Title: string;
-	Icon?: iconRepeater;
+	icon?: iconRepeater;
 }
 
 export interface descriptionRepeater {
@@ -55,39 +57,44 @@ export interface descriptionRepeater {
 }
 
 export interface iconRepeater extends defaultStrapiFields {
-	value: string;
+	value: IconType;
 }
 
 export interface socialsRepeater extends defaultStrapiFields {
 	Name: string;
 	URL: string;
-	icons: iconRepeater;
+	icon: iconRepeater;
 }
 
 export interface buttonRepeater {
 	IsDownload?: boolean;
-	Type: string;
+	Type: "normal" | "outline";
 	URL: string;
 	Value: string;
 	id: number;
+	Icon?: IconType;
 }
 
 export interface projectRepeater extends defaultStrapiFields {
 	Title: string;
 	Description: string;
+	skills?: skillRepeater[];
 	GitURL?: string;
 	ProjectURL?: string;
+	Image?: string;
 }
 
 export interface technicalSkillsContent extends componentBaseProps {
 	__component: "blocks.technical-skills";
 	Title: string;
 	Description: string;
-	Categories: Array<{
-		id: number;
-		title: string;
-		skills: skillRepeater[];
-	}>;
+	Categories: technicalSkillsCategoryContent[];
+}
+
+export interface technicalSkillsCategoryContent {
+	id?: number;
+	title: string;
+	skills: skillRepeater[];
 }
 
 export interface featureProjectsContent extends componentBaseProps {

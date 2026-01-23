@@ -1,57 +1,49 @@
 import { IconPicker } from "../../../components/icon-picker/IconPicker";
-import { type SkillProps } from "../../Skills/Skill/Skill";
+import type {
+	projectRepeater,
+	skillRepeater,
+} from "../../../strapiProps.interface";
 import styles from "./ProjectsItem.module.css";
 
-export interface ProjectsItemProps {
-	title: string;
-	description: string;
-	imageUrl?: string;
-	liveUrl?: string;
-	repoUrl?: string;
-	skills?: SkillProps[];
-}
-
 export const ProjectsItem = ({
-	title,
-	description,
-	imageUrl,
-	liveUrl,
-	repoUrl,
+	Title,
+	Description,
+	Image,
+	ProjectURL,
+	GitURL,
 	skills,
-}: ProjectsItemProps) => {
+}: projectRepeater) => {
 	return (
 		<div className={styles.item + " fade-in"}>
 			<div className={styles["item-inner"]}>
 				<div className={styles["items-img-ctn"]}>
-					{!imageUrl && <IconPicker icon="code" />}
-					{imageUrl && (
-						<img
-							src={imageUrl}
-							alt={title}
-							className={styles.image}
-						/>
+					{!Image && <IconPicker icon="code" />}
+					{Image && (
+						<img src={Image} alt={Title} className={styles.image} />
 					)}
 				</div>
 				<div className={styles.content}>
-					<h3 className={styles.title}>{title}</h3>
-					<p className={styles.description}>{description}</p>
+					<h3 className={styles.title}>{Title}</h3>
+					<p className={styles.description}>{Description}</p>
 					{skills && skills.length > 0 && (
 						<div className={styles.skills}>
-							{skills.map((skill, index) => (
-								<div
-									key={index}
-									className={styles["skills-item"]}
-									title={skill.name}
-								>
-									<IconPicker icon={skill.icon} />
-								</div>
-							))}
+							{skills.map(
+								(skill: skillRepeater, index: number) => (
+									<div
+										key={index}
+										className={styles["skills-item"]}
+										title={skill.Title}
+									>
+										<IconPicker icon={skill.icon!.value} />
+									</div>
+								),
+							)}
 						</div>
 					)}
 					<div className={styles.links}>
-						{repoUrl && (
+						{GitURL && (
 							<a
-								href={repoUrl}
+								href={GitURL}
 								target="_blank"
 								rel="noopener noreferrer"
 								className={styles.link}
@@ -60,9 +52,9 @@ export const ProjectsItem = ({
 								Code
 							</a>
 						)}
-						{liveUrl && (
+						{ProjectURL && (
 							<a
-								href={liveUrl}
+								href={ProjectURL}
 								target="_blank"
 								rel="noopener noreferrer"
 								className={styles.link}
