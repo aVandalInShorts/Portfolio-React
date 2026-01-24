@@ -25,7 +25,11 @@ export const Hero = (props: heroContent) => {
 						{props.socials
 							.filter((social) => social.Icon)
 							.map((social) => (
-								<a href={social.URL} key={social.id}>
+								<a
+									href={social.URL}
+									key={social.id}
+									aria-label={social.Name}
+								>
 									<IconPicker icon={social.Icon.value} />
 								</a>
 							))}

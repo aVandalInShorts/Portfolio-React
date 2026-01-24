@@ -23,6 +23,7 @@ export const ProjectsItem = ({
 							src={`${import.meta.env.VITE_STRAPI_API_URL}${Image.url}`}
 							alt={Title}
 							className={styles.image}
+							loading="lazy"
 						/>
 					)}
 				</div>
@@ -53,6 +54,7 @@ export const ProjectsItem = ({
 								target="_blank"
 								rel="noopener noreferrer"
 								className={styles.link}
+								aria-label="GitHub"
 							>
 								<IconPicker icon="github" />
 								Code
@@ -64,6 +66,7 @@ export const ProjectsItem = ({
 								target="_blank"
 								rel="noopener noreferrer"
 								className={styles.link}
+								aria-label="Demo"
 							>
 								<IconPicker icon="external-link" />
 								Live demo

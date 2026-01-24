@@ -116,4 +116,5 @@ export interface contactContent extends componentBaseProps {
 	Title: string;
 	Description: descriptionRepeater[];
 	Buttons: buttonRepeater[];
+	socials?: socialsRepeater[];
 }

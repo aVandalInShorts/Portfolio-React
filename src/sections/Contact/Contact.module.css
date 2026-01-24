@@ -17,7 +17,11 @@
 	margin-block-end: 16px;
 }
 
-.cta {
+.btns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	gap: 18px;
 	margin-block: 32px;
 }
 

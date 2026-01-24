@@ -8,6 +8,7 @@ import { Projects } from "./sections/Projects/Projects";
 import { Skills } from "./sections/Skills/Skills";
 import { Loading } from "./modules/Loading/Loading";
 import type { appProps, contentBlock, locales } from "./strapiProps.interface";
+import { SEO } from "./modules/SEO/SEO";
 
 type homePageDataLocale = {
 	[curr in locales]?: appProps;
@@ -101,29 +102,40 @@ function App() {
 			{loading && <Loading />}
 			{!loading && (
 				<>
+					<SEO currLocale={currLocale} />
 					<Header
 						title={homePageData[currLocale]?.HeaderTitle}
 						nav={navItems}
 						currLocale={currLocale}
 						toggleLocale={toggleCurrLocale}
 					/>
-					{homePageData[currLocale]?.Content.map((block, index) => {
-						if (block.__component === "blocks.hero") {
-							return <Hero {...block} key={index} />;
-						} else if (block.__component === "blocks.about") {
-							return <About {...block} key={index} />;
-						} else if (
-							block.__component === "blocks.technical-skills"
-						) {
-							return <Skills {...block} key={index} />;
-						} else if (
-							block.__component === "blocks.features-projects"
-						) {
-							return <Projects {...block} key={index} />;
-						} else if (block.__component === "blocks.contact") {
-							return <Contact {...block} key={index} />;
-						}
-					})}
+					<main role="main">
+						{homePageData[currLocale]?.Content.map(
+							(block, index) => {
+								if (block.__component === "blocks.hero") {
+									return <Hero {...block} key={index} />;
+								} else if (
+									block.__component === "blocks.about"
+								) {
+									return <About {...block} key={index} />;
+								} else if (
+									block.__component ===
+									"blocks.technical-skills"
+								) {
+									return <Skills {...block} key={index} />;
+								} else if (
+									block.__component ===
+									"blocks.features-projects"
+								) {
+									return <Projects {...block} key={index} />;
+								} else if (
+									block.__component === "blocks.contact"
+								) {
+									return <Contact {...block} key={index} />;
+								}
+							},
+						)}
+					</main>
 					<Footer
 						copyright={
 							homePageData[currLocale]?.FooterCopyrights ?? ""

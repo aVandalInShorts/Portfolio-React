@@ -66,8 +66,10 @@ export const Header = (props: headerProps) => {
 		}
 	}, [themeState]);
 
+	console.log("props.nav", props.nav);
+
 	return (
-		<header className={styles.header}>
+		<header className={styles.header} role="banner">
 			<div
 				className={
 					styles["header-inner"] +
@@ -79,35 +81,45 @@ export const Header = (props: headerProps) => {
 					<h1 className={styles.title + " gradient-bg"}>
 						{props.title}
 					</h1>
-					<nav className={styles.nav}>
+					<nav className={styles.nav} role="navigation">
 						<div className={styles.menu} ref={menuRef}>
-							{props.nav?.map((item, index) => {
-								if (item.hash === "" || item.label === "") {
-									return null;
-								}
-
-								return (
-									<a
-										href={`#${item.hash}`}
-										onClick={(e) => {
-											e.preventDefault();
-											setIsMenuOpen(false);
-											document
-												.getElementById(item.hash)
-												?.scrollIntoView({
-													behavior: "smooth",
-												});
-										}}
-										key={index}
-									>
-										{item.label}
-									</a>
-								);
-							})}
+							{props.nav
+								?.filter(
+									(item) =>
+										item.hash !== "" &&
+										item.hash !== null &&
+										item.label !== "" &&
+										item.label !== null,
+								)
+								.map((item, index) => {
+									return (
+										<a
+											href={`#${item.hash}`}
+											onClick={(e) => {
+												e.preventDefault();
+												setIsMenuOpen(false);
+												document
+													.getElementById(item.hash)
+													?.scrollIntoView({
+														behavior: "smooth",
+													});
+											}}
+											key={index}
+											aria-label={item.label}
+										>
+											{item.label}
+										</a>
+									);
+								})}
 						</div>
 						<button
 							className={styles["theme-btn"]}
 							onClick={toggleColorTheme}
+							aria-label={
+								props.currLocale === "en"
+									? "Toggle theme"
+									: "Changer le thème"
+							}
 						>
 							<IconPicker
 								icon={themeState === "dark" ? "sun" : "moon"}
@@ -116,6 +128,11 @@ export const Header = (props: headerProps) => {
 						<button
 							className={styles["lang-btn"]}
 							onClick={props.toggleLocale}
+							aria-label={
+								props.currLocale === "en"
+									? "Switch language to French"
+									: "Changer la langue en anglais"
+							}
 						>
 							{props.currLocale === "en" ? "FR" : "EN"}
 						</button>
@@ -123,6 +140,15 @@ export const Header = (props: headerProps) => {
 							className={styles["menu-btn"]}
 							onClick={() => setIsMenuOpen(!isMenuOpen)}
 							ref={menuBtnRef}
+							aria-label={
+								isMenuOpen
+									? props.currLocale === "en"
+										? "Close menu"
+										: "Fermer le menu"
+									: props.currLocale === "en"
+										? "Open menu"
+										: "Ouvrir le menu"
+							}
 						>
 							{isMenuOpen && <IconPicker icon="close" />}
 							{!isMenuOpen && <IconPicker icon="hamburger" />}

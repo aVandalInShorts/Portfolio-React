@@ -7,6 +7,7 @@ export const Button = (props: buttonRepeater) => {
 			href={props.URL}
 			className={`cta bigger${props.Type === "outline" ? " outline" : ""}`}
 			download={props.IsDownload}
+			area-label={props.Value}
 		>
 			{props.Icon && props.Icon.value && (
 				<IconPicker icon={props.Icon.value} />

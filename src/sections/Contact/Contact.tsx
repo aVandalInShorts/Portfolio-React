@@ -1,8 +1,13 @@
+import { Button } from "../../components/button/button";
 import { IconPicker } from "../../components/icon-picker/IconPicker";
-import type { contactContent } from "../../strapiProps.interface";
+import type {
+	buttonRepeater,
+	contactContent,
+} from "../../strapiProps.interface";
 import styles from "./Contact.module.css";
 
 export const Contact = (props: contactContent) => {
+	console.log("props", props);
 	return (
 		<section className={styles.contact + " section"} id={props.Hash}>
 			<div className={styles["contact-inner"] + " section-inner"}>
@@ -15,22 +20,29 @@ export const Contact = (props: contactContent) => {
 					))}
 				</div>
 
-				<a
-					href="mailto:francois.vandal@gmail.com"
-					className={styles.cta + " cta"}
-				>
-					<IconPicker icon="mail" />
-					Email me
-				</a>
+				{props.Buttons && (
+					<div className={styles["btns"]}>
+						{props.Buttons.map((button: buttonRepeater, index) => (
+							<Button key={index} {...button} />
+						))}
+					</div>
+				)}
 
-				<div className={styles.other}>
-					<a href="#">
-						<IconPicker icon="linkedin" />
-					</a>
-					<a href="#">
-						<IconPicker icon="mail" />
-					</a>
-				</div>
+				{props.socials && (
+					<div className={styles.other}>
+						{props.socials
+							.filter((social) => social.Icon)
+							.map((social) => (
+								<a
+									href={social.URL}
+									key={social.id}
+									aria-label={social.Name}
+								>
+									<IconPicker icon={social.Icon.value} />
+								</a>
+							))}
+					</div>
+				)}
 			</div>
 		</section>
 	);

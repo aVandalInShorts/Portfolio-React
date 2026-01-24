@@ -6,7 +6,7 @@ interface footerProps {
 
 export const Footer = ({ copyright }: footerProps) => {
 	return (
-		<footer className={styles.footer + " section"}>
+		<footer className={styles.footer + " section"} role="contentinfo">
 			<p className="section-inner">{copyright}</p>
 		</footer>
 	);
