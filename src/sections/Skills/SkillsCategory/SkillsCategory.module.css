@@ -41,9 +41,15 @@
 
 .items {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 	gap: 16px;
 	flex-wrap: wrap;
+
+	&.flex-width {
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+	}
 }
 
 @media screen and (max-width: 1023px) {

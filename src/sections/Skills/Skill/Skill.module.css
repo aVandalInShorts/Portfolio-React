@@ -16,6 +16,10 @@
 	box-shadow: 0 10px 20px 0 transparent;
 	transition: all 0.3s ease;
 
+	&[data-icon=""] {
+		padding-block: 15px;
+	}
+
 	&:hover {
 		background-color: var(--blue-20);
 		border-color: var(--blue-80);
@@ -27,7 +31,13 @@
 		}
 	}
 
-	&[data-icon="javascript"] {
+	&[data-icon="html"] {
+		--skill-gradient-color: #e44d26;
+	}
+	&[data-icon="css"] {
+		--skill-gradient-color: #0c6eb6;
+	}
+	&[data-icon="js"] {
 		--skill-gradient-color: #f0db4f;
 	}
 	&[data-icon="angular"] {
@@ -39,7 +49,7 @@
 	&[data-icon="vue"] {
 		--skill-gradient-color: #42b883;
 	}
-	&[data-icon="typescript"] {
+	&[data-icon="ts"] {
 		--skill-gradient-color: #3178c6;
 	}
 	&[data-icon="strapi"] {

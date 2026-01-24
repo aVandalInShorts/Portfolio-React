@@ -18,6 +18,7 @@ export const Skills = (props: technicalSkillsContent) => {
 							key={index}
 							Title={category.Title}
 							skills={category.skills}
+							FlexWidth={category.FlexWidth}
 						/>
 					))}
 				</div>

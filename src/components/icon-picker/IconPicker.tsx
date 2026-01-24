@@ -2,6 +2,7 @@ import { Angular } from "./icons/Angular";
 import { Close } from "./icons/Close";
 import { Code } from "./icons/Code";
 import { Csharp } from "./icons/Csharp";
+import { CSS } from "./icons/CSS";
 import { Database } from "./icons/Database";
 import { Document } from "./icons/Document";
 import { Download } from "./icons/Download";
@@ -9,6 +10,8 @@ import { ExternalLink } from "./icons/ExternalLink";
 import { Favicon } from "./icons/Favicon";
 import { Github } from "./icons/Github";
 import { Hamburger } from "./icons/Hamburger";
+import { Html } from "./icons/Html";
+import { JS } from "./icons/JS";
 import { LinkedIn } from "./icons/LinkedIn";
 import { Mail } from "./icons/Mail";
 import { MapPin } from "./icons/MapPin";
@@ -17,6 +20,7 @@ import { PHP } from "./icons/PHP";
 import { React } from "./icons/React";
 import { Strapi } from "./icons/Strapi";
 import { Sun } from "./icons/Sun";
+import { TS } from "./icons/TS";
 import { Vue } from "./icons/Vue";
 import { Wordpress } from "./icons/Wordpress";
 
@@ -25,6 +29,7 @@ export type IconType =
 	| "close"
 	| "code"
 	| "csharp"
+	| "css"
 	| "database"
 	| "document"
 	| "download"
@@ -32,6 +37,8 @@ export type IconType =
 	| "favicon"
 	| "github"
 	| "hamburger"
+	| "html"
+	| "js"
 	| "linkedin"
 	| "mail"
 	| "map-pin"
@@ -40,6 +47,7 @@ export type IconType =
 	| "react"
 	| "strapi"
 	| "sun"
+	| "ts"
 	| "vue"
 	| "wordpress";
 
@@ -56,6 +64,8 @@ export const IconPicker = ({ icon }: IconPickerProps) => {
 		return <Code />;
 	} else if (icon === "csharp") {
 		return <Csharp />;
+	} else if (icon === "css") {
+		return <CSS />;
 	} else if (icon === "database") {
 		return <Database />;
 	} else if (icon === "document") {
@@ -70,6 +80,10 @@ export const IconPicker = ({ icon }: IconPickerProps) => {
 		return <Github />;
 	} else if (icon === "hamburger") {
 		return <Hamburger />;
+	} else if (icon === "html") {
+		return <Html />;
+	} else if (icon === "js") {
+		return <JS />;
 	} else if (icon === "linkedin") {
 		return <LinkedIn />;
 	} else if (icon === "mail") {
@@ -86,6 +100,8 @@ export const IconPicker = ({ icon }: IconPickerProps) => {
 		return <Strapi />;
 	} else if (icon === "sun") {
 		return <Sun />;
+	} else if (icon === "ts") {
+		return <TS />;
 	} else if (icon === "vue") {
 		return <Vue />;
 	} else if (icon === "wordpress") {

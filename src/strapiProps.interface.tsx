@@ -101,6 +101,7 @@ export interface technicalSkillsCategoryContent {
 	id?: number;
 	Title: string;
 	skills: skillRepeater[];
+	FlexWidth: boolean;
 }
 
 export interface featureProjectsContent extends componentBaseProps {
