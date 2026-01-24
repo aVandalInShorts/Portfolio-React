@@ -30,6 +30,7 @@
 	grid-area: list;
 	list-style: none;
 	padding: 0;
+	max-width: 350px;
 
 	li {
 		position: relative;

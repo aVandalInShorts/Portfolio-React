@@ -17,6 +17,7 @@ type homePageDataLocale = {
 function App() {
 	const [homePageData, setHomePageData] = useState<homePageDataLocale>({});
 	const [loading, setLoading] = useState(true);
+	const [strapiHasError, setStrapiHasError] = useState(false);
 
 	const detectDefaultLocale = () => {
 		const language = navigator.language;
@@ -48,7 +49,7 @@ function App() {
 	);
 
 	useEffect(() => {
-		if (!homePageData[currLocale]) {
+		if (!homePageData[currLocale] && !strapiHasError) {
 			const params = new URLSearchParams();
 			params.append("populate[Content][on][blocks.about][populate]", "*");
 			params.append(
@@ -93,7 +94,10 @@ function App() {
 					});
 					setLoading(false);
 				})
-				.catch(console.error);
+				.catch((error) => {
+					setStrapiHasError(true);
+					console.error("Error fetching data from Strapi", error);
+				});
 		}
 	}, [currLocale, homePageData]);
 
