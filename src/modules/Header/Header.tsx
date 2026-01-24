@@ -1,10 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { IconPicker } from "../../components/icon-picker/IconPicker";
 import styles from "./Header.module.css";
+import type { locales } from "../../strapiProps.interface";
 
 export interface headerProps {
 	title?: string;
 	nav: navProps[];
+	currLocale: locales;
+	toggleLocale: () => void;
 }
 
 export interface navProps {
@@ -86,7 +89,15 @@ export const Header = (props: headerProps) => {
 								return (
 									<a
 										href={`#${item.hash}`}
-										onClick={() => setIsMenuOpen(false)}
+										onClick={(e) => {
+											e.preventDefault();
+											setIsMenuOpen(false);
+											document
+												.getElementById(item.hash)
+												?.scrollIntoView({
+													behavior: "smooth",
+												});
+										}}
 										key={index}
 									>
 										{item.label}
@@ -102,7 +113,12 @@ export const Header = (props: headerProps) => {
 								icon={themeState === "dark" ? "sun" : "moon"}
 							/>
 						</button>
-						<button className={styles["lang-btn"]}>EN</button>
+						<button
+							className={styles["lang-btn"]}
+							onClick={props.toggleLocale}
+						>
+							{props.currLocale === "en" ? "FR" : "EN"}
+						</button>
 						<button
 							className={styles["menu-btn"]}
 							onClick={() => setIsMenuOpen(!isMenuOpen)}

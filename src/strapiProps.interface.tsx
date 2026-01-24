@@ -1,5 +1,7 @@
 import type { IconType } from "./components/icon-picker/IconPicker";
 
+export type locales = "en" | "fr-CA";
+
 export interface defaultStrapiFields {
 	createdAt: string;
 	documentId: string;
@@ -9,7 +11,7 @@ export interface defaultStrapiFields {
 	updatedAt: string;
 }
 
-export type ContentBlock =
+export type contentBlock =
 	| heroContent
 	| aboutContent
 	| technicalSkillsContent
@@ -17,7 +19,7 @@ export type ContentBlock =
 	| contactContent;
 
 export interface appProps extends defaultStrapiFields {
-	Content: ContentBlock[];
+	Content: contentBlock[];
 	HeaderTitle: string;
 	FooterCopyrights: string;
 }

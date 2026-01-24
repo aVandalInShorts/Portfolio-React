@@ -22,11 +22,13 @@ export const Hero = (props: heroContent) => {
 
 				{props.socials && (
 					<div className={styles.links}>
-						{props.socials.map((social) => (
-							<a href={social.URL} key={social.id}>
-								<IconPicker icon={social.Icon.value} />
-							</a>
-						))}
+						{props.socials
+							.filter((social) => social.Icon)
+							.map((social) => (
+								<a href={social.URL} key={social.id}>
+									<IconPicker icon={social.Icon.value} />
+								</a>
+							))}
 					</div>
 				)}
 			</div>
