@@ -5,7 +5,7 @@ export const About = (props: aboutContent) => {
 	return (
 		<section
 			className={styles.about + " section section-alt-bg"}
-			id="about"
+			id={props.Hash}
 		>
 			<div className={styles["about-inner"] + " section-inner"}>
 				<h3 className={styles.title}>{props.title}</h3>

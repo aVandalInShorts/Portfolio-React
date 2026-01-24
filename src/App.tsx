@@ -26,6 +26,10 @@ function App() {
 			"*",
 		);
 		params.append(
+			"populate[Content][on][blocks.features-projects][populate][projects][populate][Image][populate]",
+			"*",
+		);
+		params.append(
 			"populate[Content][on][blocks.features-projects][populate][projects][populate][skills][populate]",
 			"*",
 		);
@@ -43,7 +47,7 @@ function App() {
 		);
 
 		fetch(
-			`${import.meta.env.VITE_STRAPI_API_URL}api/homepage?${params.toString()}`,
+			`${import.meta.env.VITE_STRAPI_API_URL}/api/homepage?${params.toString()}`,
 		)
 			.then((response) => response.json())
 			.then((data) => {
@@ -73,21 +77,21 @@ function App() {
 			{!loading && (
 				<>
 					<Header title={homePageData?.HeaderTitle} nav={navItems} />
-					{homePageData?.Content.map((block) => {
+					{homePageData?.Content.map((block, index) => {
 						if (block.__component === "blocks.hero") {
-							return <Hero {...block} key={block.id} />;
+							return <Hero {...block} key={index} />;
 						} else if (block.__component === "blocks.about") {
-							return <About {...block} key={block.id} />;
+							return <About {...block} key={index} />;
 						} else if (
 							block.__component === "blocks.technical-skills"
 						) {
-							return <Skills {...block} key={block.id} />;
+							return <Skills {...block} key={index} />;
 						} else if (
 							block.__component === "blocks.features-projects"
 						) {
-							return <Projects {...block} key={block.id} />;
+							return <Projects {...block} key={index} />;
 						} else if (block.__component === "blocks.contact") {
-							return <Contact {...block} key={block.id} />;
+							return <Contact {...block} key={index} />;
 						}
 					})}
 					<Footer copyright={homePageData?.FooterCopyrights ?? ""} />

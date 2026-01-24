@@ -19,7 +19,11 @@ export const ProjectsItem = ({
 				<div className={styles["items-img-ctn"]}>
 					{!Image && <IconPicker icon="code" />}
 					{Image && (
-						<img src={Image} alt={Title} className={styles.image} />
+						<img
+							src={`${import.meta.env.VITE_STRAPI_API_URL}${Image.url}`}
+							alt={Title}
+							className={styles.image}
+						/>
 					)}
 				</div>
 				<div className={styles.content}>
@@ -27,17 +31,19 @@ export const ProjectsItem = ({
 					<p className={styles.description}>{Description}</p>
 					{skills && skills.length > 0 && (
 						<div className={styles.skills}>
-							{skills.map(
-								(skill: skillRepeater, index: number) => (
+							{skills
+								.filter(
+									(skill) => skill.Icon && skill.Icon.value,
+								)
+								.map((skill: skillRepeater, index: number) => (
 									<div
 										key={index}
 										className={styles["skills-item"]}
 										title={skill.Title}
 									>
-										<IconPicker icon={skill.icon!.value} />
+										<IconPicker icon={skill.Icon!.value} />
 									</div>
-								),
-							)}
+								))}
 						</div>
 					)}
 					<div className={styles.links}>

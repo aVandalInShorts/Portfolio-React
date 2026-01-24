@@ -6,14 +6,14 @@ import { Skill } from "../Skill/Skill";
 import styles from "./SkillsCategory.module.css";
 
 export const SkillsCategory = ({
-	title,
+	Title,
 	skills,
 }: technicalSkillsCategoryContent) => {
 	return (
 		<div className={styles["skills-category"] + " fade-in"}>
 			<div className={styles["title-ctn"]}>
 				<span className={styles.line}></span>
-				<h3 className={styles.title}>{title}</h3>
+				<h3 className={styles.title}>{Title}</h3>
 				<span className={styles.line}></span>
 			</div>
 			<div className={styles.items}>

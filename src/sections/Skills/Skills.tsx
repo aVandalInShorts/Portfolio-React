@@ -4,22 +4,19 @@ import { SkillsCategory } from "./SkillsCategory/SkillsCategory";
 
 export const Skills = (props: technicalSkillsContent) => {
 	return (
-		<section className={styles.skills + " section"} id="skills">
+		<section className={styles.skills + " section"} id={props.Hash}>
 			<div className={styles["skills-inner"] + " section-inner"}>
 				<h3 className={styles.title + " h2 gradient-bg"}>
-					Technical Skills
+					{props.Title}
 				</h3>
 
-				<p className={styles.description}>
-					A comprehensive collection of technologies and tools I use
-					to build exceptional web experiences
-				</p>
+				<p className={styles.description}>{props.Description}</p>
 
 				<div className={styles.list}>
 					{props.Categories.map((category, index) => (
 						<SkillsCategory
 							key={index}
-							title={category.title}
+							Title={category.Title}
 							skills={category.skills}
 						/>
 					))}

@@ -4,7 +4,7 @@ import styles from "./Contact.module.css";
 
 export const Contact = (props: contactContent) => {
 	return (
-		<section className={styles.contact + " section"} id="contact">
+		<section className={styles.contact + " section"} id={props.Hash}>
 			<div className={styles["contact-inner"] + " section-inner"}>
 				<h3 className={styles.title}>{props.Title}</h3>
 				<div className={styles.description}>

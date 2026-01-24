@@ -1,3 +1,4 @@
+import { Button } from "../../components/button/button";
 import { IconPicker } from "../../components/icon-picker/IconPicker";
 import type { buttonRepeater, heroContent } from "../../strapiProps.interface";
 import styles from "./Hero.module.css";
@@ -14,18 +15,7 @@ export const Hero = (props: heroContent) => {
 				{props.Buttons && (
 					<div className={styles["btns"]}>
 						{props.Buttons.map((button: buttonRepeater, index) => (
-							<a
-								href={button.URL}
-								className={`cta bigger${button.Type === "outline" ? " outline" : ""}`}
-								download={button.IsDownload}
-								key={index}
-							>
-								{button.Icon && (
-									<IconPicker icon={button.Icon.value} />
-								)}
-								<IconPicker icon="download" />
-								{button.Value}
-							</a>
+							<Button key={index} {...button} />
 						))}
 					</div>
 				)}
@@ -34,7 +24,7 @@ export const Hero = (props: heroContent) => {
 					<div className={styles.links}>
 						{props.socials.map((social) => (
 							<a href={social.URL} key={social.id}>
-								<IconPicker icon={social.icon.value} />
+								<IconPicker icon={social.Icon.value} />
 							</a>
 						))}
 					</div>

@@ -48,7 +48,7 @@ export interface aboutContent extends componentBaseProps {
 
 export interface skillRepeater extends defaultStrapiFields {
 	Title: string;
-	icon?: iconRepeater;
+	Icon?: iconRepeater;
 }
 
 export interface descriptionRepeater {
@@ -63,7 +63,11 @@ export interface iconRepeater extends defaultStrapiFields {
 export interface socialsRepeater extends defaultStrapiFields {
 	Name: string;
 	URL: string;
-	icon: iconRepeater;
+	Icon: iconRepeater;
+}
+
+export interface mediaField extends defaultStrapiFields {
+	url: string;
 }
 
 export interface buttonRepeater {
@@ -72,7 +76,7 @@ export interface buttonRepeater {
 	URL: string;
 	Value: string;
 	id: number;
-	Icon?: IconType;
+	Icon?: iconRepeater;
 }
 
 export interface projectRepeater extends defaultStrapiFields {
@@ -81,7 +85,7 @@ export interface projectRepeater extends defaultStrapiFields {
 	skills?: skillRepeater[];
 	GitURL?: string;
 	ProjectURL?: string;
-	Image?: string;
+	Image?: mediaField;
 }
 
 export interface technicalSkillsContent extends componentBaseProps {
@@ -93,7 +97,7 @@ export interface technicalSkillsContent extends componentBaseProps {
 
 export interface technicalSkillsCategoryContent {
 	id?: number;
-	title: string;
+	Title: string;
 	skills: skillRepeater[];
 }
 
@@ -101,7 +105,7 @@ export interface featureProjectsContent extends componentBaseProps {
 	__component: "blocks.features-projects";
 	Title: string;
 	Description: string;
-	Projects?: projectRepeater[];
+	projects?: projectRepeater[];
 }
 
 export interface contactContent extends componentBaseProps {
