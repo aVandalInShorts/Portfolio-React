@@ -16,11 +16,7 @@
 
 	&:hover {
 		border-color: var(--blue-50);
-		box-shadow: 0 10px 20px 0px var(--blue-20);
-
-		@media not (prefers-reduced-motion: reduce) {
-			translate: 0 -15px;
-		}
+		box-shadow: 0 0 20px 0px var(--blue-20);
 
 		.title {
 			color: var(--gradient-blue);
