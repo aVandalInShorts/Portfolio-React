@@ -40,6 +40,16 @@ export const Header = (props: headerProps) => {
 		setThemeState(getActiveColorScheme() === "dark" ? "light" : "dark");
 	}
 
+	function setCurrColorScheme() {
+		const currTheme = themeState || getActiveColorScheme();
+		document
+			.querySelector("meta[name='theme-color']")
+			?.setAttribute(
+				"content",
+				currTheme === "dark" ? "#0f172b" : "#fefeff",
+			);
+	}
+
 	useEffect(() => {
 		function handleClickOutside(event: MouseEvent) {
 			if (
@@ -64,14 +74,13 @@ export const Header = (props: headerProps) => {
 				.querySelector("html")
 				?.setAttribute("data-theme", themeState);
 
-			document
-				.querySelector("meta[name='theme-color']")
-				?.setAttribute(
-					"content",
-					themeState === "dark" ? "#0f172b" : "#fefeff",
-				);
+			setCurrColorScheme();
 		}
 	}, [themeState]);
+
+	useEffect(() => {
+		setCurrColorScheme();
+	}, []);
 
 	return (
 		<header className={styles.header} role="banner">
