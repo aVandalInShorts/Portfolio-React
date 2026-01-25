@@ -7,7 +7,6 @@ import type {
 import styles from "./Contact.module.css";
 
 export const Contact = (props: contactContent) => {
-	console.log("props", props);
 	return (
 		<section className={styles.contact + " section"} id={props.Hash}>
 			<div className={styles["contact-inner"] + " section-inner"}>
