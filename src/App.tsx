@@ -28,12 +28,17 @@ function App() {
 	};
 
 	const toggleCurrLocale = () => {
-		setCurrLocale(currLocale === "en" ? "fr-CA" : "en");
+		const newLocale = currLocale === "en" ? "fr-CA" : "en";
+		setCurrLocale(newLocale);
 		history.pushState(
 			"",
 			document.title,
 			window.location.pathname + window.location.search,
 		);
+
+		if (!homePageData[newLocale]) {
+			setLoading(true);
+		}
 	};
 
 	const [currLocale, setCurrLocale] = useState<locales>(
@@ -98,6 +103,7 @@ function App() {
 				})
 				.catch((error) => {
 					setStrapiHasError(true);
+					setLoading(false);
 					console.error("Error fetching data from Strapi", error);
 				});
 		}
