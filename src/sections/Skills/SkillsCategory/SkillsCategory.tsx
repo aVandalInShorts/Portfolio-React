@@ -17,13 +17,15 @@ export const SkillsCategory = ({
 				<h3 className={styles.title}>{Title}</h3>
 				<span className={styles.line}></span>
 			</div>
-			<div
-				className={`${styles["items"]} ${FlexWidth ? styles["flex-width"] : ""}`}
-			>
-				{skills.map((skill: skillRepeater) => (
-					<Skill key={skill.id} {...skill} />
-				))}
-			</div>
+			{skills && (
+				<div
+					className={`${styles["items"]} ${FlexWidth ? styles["flex-width"] : ""}`}
+				>
+					{skills.map((skill: skillRepeater) => (
+						<Skill key={skill.id} {...skill} />
+					))}
+				</div>
+			)}
 		</div>
 	);
 };

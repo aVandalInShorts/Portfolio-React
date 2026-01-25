@@ -66,8 +66,6 @@ export const Header = (props: headerProps) => {
 		}
 	}, [themeState]);
 
-	console.log("props.nav", props.nav);
-
 	return (
 		<header className={styles.header} role="banner">
 			<div
