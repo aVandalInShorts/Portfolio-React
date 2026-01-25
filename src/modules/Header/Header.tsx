@@ -63,6 +63,13 @@ export const Header = (props: headerProps) => {
 			document
 				.querySelector("html")
 				?.setAttribute("data-theme", themeState);
+
+			document
+				.querySelector("meta[name='theme-color']")
+				?.setAttribute(
+					"content",
+					themeState === "dark" ? "#0f172b" : "#fefeff",
+				);
 		}
 	}, [themeState]);
 
