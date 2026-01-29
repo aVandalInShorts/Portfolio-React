@@ -31,6 +31,7 @@ export const SEO = ({ currLocale }: { currLocale: string }) => {
 						Keywords: seoAttributes.Keywords,
 					},
 				});
+				console.log("DATA", data);
 			})
 			.catch(console.error);
 	}, [currLocale]);
