@@ -98,6 +98,7 @@ function App() {
 						[currLocale]: data.data,
 					});
 					setLoading(false);
+					console.log("DATA", data);
 				})
 				.catch((error) => {
 					setStrapiHasError(true);
