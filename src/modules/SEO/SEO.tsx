@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { getSEOData } from "../../services/data/strapi.service";
 
-interface seoProps {
+export interface seoProps {
 	Title?: string;
 	Description?: string;
 	Keywords?: string;
@@ -11,32 +12,9 @@ type seoDataLocale = {
 };
 
 export const SEO = ({ currLocale }: { currLocale: string }) => {
-	const [seoData, setSeoData] = useState<seoDataLocale | null>(null);
+	const seoData: seoDataLocale = getSEOData();
 
-	useEffect(() => {
-		const params = new URLSearchParams();
-		params.append("locale", currLocale);
-
-		fetch(
-			`${import.meta.env.VITE_STRAPI_API_URL}/api/seo?${params.toString()}`,
-		)
-			.then((response) => response.json())
-			.then((data) => {
-				const seoAttributes = data.data;
-				setSeoData({
-					...seoData,
-					[currLocale]: {
-						Title: seoAttributes.Title,
-						Description: seoAttributes.Description,
-						Keywords: seoAttributes.Keywords,
-					},
-				});
-				console.log("DATA", data);
-			})
-			.catch(console.error);
-	}, [currLocale]);
-
-	useEffect(() => {
+	const updateFields = () => {
 		document.title = seoData?.[currLocale]?.Title || "François Vandal";
 		document
 			.querySelector('meta[property="og:title"]')
@@ -62,7 +40,11 @@ export const SEO = ({ currLocale }: { currLocale: string }) => {
 		document
 			.querySelector('meta[name="keywords"]')
 			?.setAttribute("content", seoData?.[currLocale]?.Keywords || "");
-	}, [seoData]);
+	};
+
+	useEffect(() => {
+		updateFields();
+	}, [currLocale]);
 
 	return <></>;
 };

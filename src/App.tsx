@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Footer } from "./modules/Footer/Footer";
 import { Header, type navProps } from "./modules/Header/Header";
 import { About } from "./sections/About/About";
@@ -9,15 +9,15 @@ import { Skills } from "./sections/Skills/Skills";
 import { Loading } from "./modules/Loading/Loading";
 import type { appProps, contentBlock, locales } from "./strapiProps.interface";
 import { SEO } from "./modules/SEO/SEO";
+import { getHomepageData } from "./services/data/strapi.service";
 
 type homePageDataLocale = {
 	[curr in locales]?: appProps;
 };
 
 function App() {
-	const [homePageData, setHomePageData] = useState<homePageDataLocale>({});
-	const [loading, setLoading] = useState(true);
-	const [strapiHasError, setStrapiHasError] = useState(false);
+	const homePageData: homePageDataLocale = getHomepageData();
+	const [loading, setLoading] = useState(false);
 
 	const detectDefaultLocale = () => {
 		const language = navigator.language;
@@ -52,61 +52,6 @@ function App() {
 				hash: block.Hash,
 			}) as navProps,
 	);
-
-	useEffect(() => {
-		if (!homePageData[currLocale] && !strapiHasError) {
-			const params = new URLSearchParams();
-			params.append("populate[Content][on][blocks.about][populate]", "*");
-			params.append(
-				"populate[Content][on][blocks.contact][populate][Buttons][populate]",
-				"*",
-			);
-			params.append(
-				"populate[Content][on][blocks.contact][populate][socials][populate]",
-				"*",
-			);
-			params.append(
-				"populate[Content][on][blocks.features-projects][populate][projects][populate][Image][populate]",
-				"*",
-			);
-			params.append(
-				"populate[Content][on][blocks.features-projects][populate][projects][populate][skills][populate]",
-				"*",
-			);
-			params.append(
-				"populate[Content][on][blocks.hero][populate][Buttons][populate]",
-				"*",
-			);
-			params.append(
-				"populate[Content][on][blocks.hero][populate][socials][populate]",
-				"*",
-			);
-			params.append(
-				"populate[Content][on][blocks.technical-skills][populate][Categories][populate][skills][populate]",
-				"*",
-			);
-
-			params.append("locale", currLocale);
-
-			fetch(
-				`${import.meta.env.VITE_STRAPI_API_URL}/api/homepage?${params.toString()}`,
-			)
-				.then((response) => response.json())
-				.then((data) => {
-					setHomePageData({
-						...homePageData,
-						[currLocale]: data.data,
-					});
-					setLoading(false);
-					console.log("DATA", data);
-				})
-				.catch((error) => {
-					setStrapiHasError(true);
-					setLoading(false);
-					console.error("Error fetching data from Strapi", error);
-				});
-		}
-	}, [currLocale, homePageData]);
 
 	return (
 		<>
