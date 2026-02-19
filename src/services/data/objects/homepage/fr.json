@@ -583,18 +583,46 @@
 			"MenuValue": "Projets",
 			"projects": [
 				{
-					"id": 25,
+					"id": 27,
 					"documentId": "xt4hq510x3pvzujkzex4pkj2",
 					"Title": "Arcade Vandal",
 					"Description": "Petite collection de jeux que j'ai fais pour le plaisir et apprendre",
 					"GitURL": "https://github.com/aVandalInShorts/vandals-arcade",
 					"ProjectURL": "https://vandals-arcade.francoisvandal.dev/fr/",
 					"createdAt": "2026-02-18T04:30:46.684Z",
-					"updatedAt": "2026-02-18T05:53:47.697Z",
-					"publishedAt": "2026-02-18T05:53:47.719Z",
+					"updatedAt": "2026-02-19T00:15:10.572Z",
+					"publishedAt": "2026-02-19T00:15:10.586Z",
 					"locale": "fr-CA",
 					"ImageURL": "/uploads/minesweeper.jpg",
 					"skills": [
+						{
+							"id": 69,
+							"documentId": "qvfge4p4pyiun90xle8fhj25",
+							"Title": "Astro",
+							"createdAt": "2026-02-18T04:42:46.081Z",
+							"updatedAt": "2026-02-18T04:42:46.081Z",
+							"publishedAt": "2026-02-18T04:42:46.093Z",
+							"locale": "fr-CA",
+							"Icon": {
+								"id": 49,
+								"documentId": "ll3swqvlrmykrwwhs0jbs0ls",
+								"value": "astro",
+								"createdAt": "2026-02-18T04:42:14.738Z",
+								"updatedAt": "2026-02-18T04:42:14.738Z",
+								"publishedAt": "2026-02-18T04:42:14.733Z"
+							},
+							"localizations": [
+								{
+									"id": 71,
+									"documentId": "qvfge4p4pyiun90xle8fhj25",
+									"Title": "Astro",
+									"createdAt": "2026-02-18T04:42:54.335Z",
+									"updatedAt": "2026-02-18T04:42:54.335Z",
+									"publishedAt": "2026-02-18T04:42:54.345Z",
+									"locale": "en"
+								}
+							]
+						},
 						{
 							"id": 80,
 							"documentId": "mvm71riyevbw3ppohzszvhhw",
@@ -647,34 +675,6 @@
 									"createdAt": "2026-01-24T16:10:30.764Z",
 									"updatedAt": "2026-02-19T00:04:49.431Z",
 									"publishedAt": "2026-02-19T00:04:49.442Z",
-									"locale": "en"
-								}
-							]
-						},
-						{
-							"id": 69,
-							"documentId": "qvfge4p4pyiun90xle8fhj25",
-							"Title": "Astro",
-							"createdAt": "2026-02-18T04:42:46.081Z",
-							"updatedAt": "2026-02-18T04:42:46.081Z",
-							"publishedAt": "2026-02-18T04:42:46.093Z",
-							"locale": "fr-CA",
-							"Icon": {
-								"id": 49,
-								"documentId": "ll3swqvlrmykrwwhs0jbs0ls",
-								"value": "astro",
-								"createdAt": "2026-02-18T04:42:14.738Z",
-								"updatedAt": "2026-02-18T04:42:14.738Z",
-								"publishedAt": "2026-02-18T04:42:14.733Z"
-							},
-							"localizations": [
-								{
-									"id": 71,
-									"documentId": "qvfge4p4pyiun90xle8fhj25",
-									"Title": "Astro",
-									"createdAt": "2026-02-18T04:42:54.335Z",
-									"updatedAt": "2026-02-18T04:42:54.335Z",
-									"publishedAt": "2026-02-18T04:42:54.345Z",
 									"locale": "en"
 								}
 							]

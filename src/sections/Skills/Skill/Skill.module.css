@@ -67,6 +67,9 @@
 	&[data-icon="github"] {
 		--skill-gradient-color: #333;
 	}
+	&[data-icon="astro"] {
+		--skill-gradient-color: #ff5607;
+	}
 }
 
 .icon {
