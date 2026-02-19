@@ -87,7 +87,7 @@ export interface projectRepeater extends defaultStrapiFields {
 	skills?: skillRepeater[];
 	GitURL?: string;
 	ProjectURL?: string;
-	Image?: mediaField;
+	ImageURL?: string;
 }
 
 export interface technicalSkillsContent extends componentBaseProps {

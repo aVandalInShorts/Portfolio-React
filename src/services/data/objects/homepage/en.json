@@ -1,16 +1,16 @@
 {
-	"id": 21,
-	"documentId": "i24avotusynmf6ndxz04dfyk",
+	"id": 46,
+	"documentId": "aafk0h3lcxtgfe2cboc5c0v6",
+	"createdAt": "2026-01-19T15:18:24.248Z",
+	"updatedAt": "2026-02-19T00:09:47.068Z",
+	"publishedAt": "2026-02-19T00:09:47.089Z",
+	"locale": "en",
 	"HeaderTitle": "François Vandal",
 	"FooterCopyrights": "© 2026 François Vandal. Built with React, Strapi and passion.",
-	"createdAt": "2026-01-24T20:27:37.970Z",
-	"updatedAt": "2026-01-29T02:39:34.074Z",
-	"publishedAt": "2026-01-29T02:39:40.553Z",
-	"locale": "en",
 	"Content": [
 		{
 			"__component": "blocks.hero",
-			"id": 21,
+			"id": 46,
 			"Pretitle": "Hi, my name is",
 			"Name": "François Vandal",
 			"Title": "I am a Full Stack Developer",
@@ -19,116 +19,116 @@
 			"MenuValue": null,
 			"Buttons": [
 				{
-					"id": 51,
+					"id": 109,
 					"Value": "View my work",
-					"URL": "#projects",
+					"URL": "#project",
 					"Type": "normal",
 					"IsDownload": false,
 					"Icon": null
 				},
 				{
-					"id": 52,
+					"id": 110,
 					"Value": "Download my CV",
-					"URL": "/uploads/Francois Vandal - CV - EN - 2026.pdf",
+					"URL": "/uploads/Francois Vandal - CV - EN - 2026",
 					"Type": "outline",
 					"IsDownload": true,
 					"Icon": {
-						"id": 8,
-						"documentId": "nsue1pc9exabe97pkdylbzfi",
+						"id": 14,
+						"documentId": "yvsusp10ug91c0y5t63zipr0",
 						"value": "download",
-						"createdAt": "2026-01-25T01:44:11.138Z",
-						"updatedAt": "2026-01-25T01:44:11.138Z",
-						"publishedAt": "2026-01-25T01:44:11.073Z"
+						"createdAt": "2026-01-21T23:11:49.161Z",
+						"updatedAt": "2026-01-21T23:11:49.161Z",
+						"publishedAt": "2026-01-21T23:11:49.170Z"
 					}
 				}
 			],
 			"socials": [
 				{
-					"id": 18,
-					"documentId": "v7s3bvxalwqdbz5ok3ohf4vj",
+					"id": 27,
+					"documentId": "ektd3o5mf2u546ayxslpa70i",
 					"Name": "LinkedIn",
 					"URL": "https://www.linkedin.com/in/fvandal/",
-					"createdAt": "2026-01-24T20:42:56.567Z",
-					"updatedAt": "2026-01-25T02:07:17.653Z",
-					"publishedAt": "2026-01-25T02:07:19.047Z",
+					"createdAt": "2026-01-19T04:01:23.644Z",
+					"updatedAt": "2026-02-19T00:07:38.316Z",
+					"publishedAt": "2026-02-19T00:07:38.328Z",
 					"locale": "en",
 					"Icon": {
-						"id": 15,
-						"documentId": "w4e6e0ilq2wcig6qgdyc90s8",
+						"id": 22,
+						"documentId": "z28tug5z0ctjyao01d087oi5",
 						"value": "linkedin",
-						"createdAt": "2026-01-25T01:45:42.850Z",
-						"updatedAt": "2026-01-25T01:45:42.850Z",
-						"publishedAt": "2026-01-25T01:45:42.785Z"
+						"createdAt": "2026-01-21T23:12:18.432Z",
+						"updatedAt": "2026-01-21T23:12:18.432Z",
+						"publishedAt": "2026-01-21T23:12:18.439Z"
 					},
 					"localizations": [
 						{
-							"id": 17,
-							"documentId": "v7s3bvxalwqdbz5ok3ohf4vj",
+							"id": 28,
+							"documentId": "ektd3o5mf2u546ayxslpa70i",
 							"Name": "LinkedIn",
 							"URL": "https://www.linkedin.com/in/fvandal/?locale=fr_FR",
-							"createdAt": "2026-01-24T20:41:56.656Z",
-							"updatedAt": "2026-01-25T02:07:07.335Z",
-							"publishedAt": "2026-01-25T02:07:08.724Z",
+							"createdAt": "2026-01-19T03:58:54.586Z",
+							"updatedAt": "2026-02-19T00:07:43.579Z",
+							"publishedAt": "2026-02-19T00:07:43.589Z",
 							"locale": "fr-CA"
 						}
 					]
 				},
 				{
-					"id": 13,
-					"documentId": "wnox73hler51caf1iqdjvv26",
+					"id": 23,
+					"documentId": "lzpgl3yb4zpt17leslc36rir",
 					"Name": "Email",
 					"URL": "mailto:francois.vandal@gmail.com",
-					"createdAt": "2026-01-24T20:42:23.341Z",
-					"updatedAt": "2026-01-25T02:06:10.714Z",
-					"publishedAt": "2026-01-25T02:06:12.161Z",
+					"createdAt": "2026-01-19T04:00:27.479Z",
+					"updatedAt": "2026-02-19T00:07:15.288Z",
+					"publishedAt": "2026-02-19T00:07:15.298Z",
 					"locale": "en",
 					"Icon": {
-						"id": 16,
-						"documentId": "l8sfc8ezdx9h8lujbpfjulgl",
+						"id": 24,
+						"documentId": "sfwgayl75dtuxneg4m1edee1",
 						"value": "mail",
-						"createdAt": "2026-01-25T01:45:54.240Z",
-						"updatedAt": "2026-01-25T01:45:54.240Z",
-						"publishedAt": "2026-01-25T01:45:54.170Z"
+						"createdAt": "2026-01-21T23:12:26.751Z",
+						"updatedAt": "2026-01-21T23:12:26.751Z",
+						"publishedAt": "2026-01-21T23:12:26.761Z"
 					},
 					"localizations": [
 						{
-							"id": 14,
-							"documentId": "wnox73hler51caf1iqdjvv26",
+							"id": 24,
+							"documentId": "lzpgl3yb4zpt17leslc36rir",
 							"Name": "Courriel",
 							"URL": "mailto:francois.vandal@gmail.com",
-							"createdAt": "2026-01-24T20:41:37.071Z",
-							"updatedAt": "2026-01-25T02:06:20.261Z",
-							"publishedAt": "2026-01-25T02:06:21.661Z",
+							"createdAt": "2026-01-19T04:00:02.653Z",
+							"updatedAt": "2026-02-19T00:07:20.864Z",
+							"publishedAt": "2026-02-19T00:07:20.869Z",
 							"locale": "fr-CA"
 						}
 					]
 				},
 				{
-					"id": 15,
-					"documentId": "ak99dz43yvhojgcw1xlr0rsn",
+					"id": 25,
+					"documentId": "lfk7w9rrz0tx9tgchai5j5cz",
 					"Name": "GitHub",
 					"URL": "https://github.com/aVandalInShorts",
-					"createdAt": "2026-01-24T20:42:37.545Z",
-					"updatedAt": "2026-01-25T02:06:33.918Z",
-					"publishedAt": "2026-01-25T02:06:35.321Z",
+					"createdAt": "2026-01-19T04:00:44.284Z",
+					"updatedAt": "2026-02-19T00:07:26.553Z",
+					"publishedAt": "2026-02-19T00:07:26.563Z",
 					"locale": "en",
 					"Icon": {
-						"id": 11,
-						"documentId": "mk10nddfxq0hg1d66vmff49l",
+						"id": 18,
+						"documentId": "urfimhgsumf3wfmyed0ib5ht",
 						"value": "github",
-						"createdAt": "2026-01-25T01:44:53.221Z",
-						"updatedAt": "2026-01-25T01:44:53.221Z",
-						"publishedAt": "2026-01-25T01:44:53.156Z"
+						"createdAt": "2026-01-21T23:12:02.254Z",
+						"updatedAt": "2026-01-21T23:12:02.254Z",
+						"publishedAt": "2026-01-21T23:12:02.262Z"
 					},
 					"localizations": [
 						{
-							"id": 16,
-							"documentId": "ak99dz43yvhojgcw1xlr0rsn",
+							"id": 26,
+							"documentId": "lfk7w9rrz0tx9tgchai5j5cz",
 							"Name": "GitHub",
 							"URL": "https://github.com/aVandalInShorts",
-							"createdAt": "2026-01-24T20:41:47.185Z",
-							"updatedAt": "2026-01-25T02:06:45.061Z",
-							"publishedAt": "2026-01-25T02:06:46.451Z",
+							"createdAt": "2026-01-19T03:59:41.492Z",
+							"updatedAt": "2026-02-19T00:07:31.341Z",
+							"publishedAt": "2026-02-19T00:07:31.346Z",
 							"locale": "fr-CA"
 						}
 					]
@@ -137,15 +137,15 @@
 		},
 		{
 			"__component": "blocks.about",
-			"id": 16,
+			"id": 38,
 			"Title": "About Me",
 			"Text": [
 				{
 					"type": "paragraph",
 					"children": [
 						{
-							"text": "As a Full-Stack Developer with Front-End specialization, I'm passionate about creating web applications that combine performance, aesthetics, and maintainability. My expertise spans from designing intuitive user interfaces to building robust backend systems. What sets me apart is my commitment to code excellence: well-structured project, thoughtful architectures, and solid development patterns that stand the test of time.",
-							"type": "text"
+							"type": "text",
+							"text": "As a Full-Stack Developer with Front-End specialization, I'm passionate about creating web applications that combine performance, aesthetics, and maintainability. My expertise spans from designing intuitive user interfaces to building robust backend systems. What sets me apart is my commitment to code excellence: well-structured project, thoughtful architectures, and solid development patterns that stand the test of time."
 						}
 					]
 				},
@@ -153,8 +153,8 @@
 					"type": "paragraph",
 					"children": [
 						{
-							"text": "Beyond my technical skills, I've developed a strong ability to lead and mentor development teams. As a team lead, I strive to create an environment where each member can grow and actively contribute to architectural decisions. Mentorship and transmitting best practices are essential aspects of effective leadership for me.",
-							"type": "text"
+							"type": "text",
+							"text": "Beyond my technical skills, I've developed a strong ability to lead and mentor development teams. As a team lead, I strive to create an environment where each member can grow and actively contribute to architectural decisions. Mentorship and transmitting best practices are essential aspects of effective leadership for me."
 						}
 					]
 				}
@@ -163,17 +163,17 @@
 			"MenuValue": "About",
 			"List": [
 				{
-					"id": 46,
+					"id": 112,
 					"Title": "Technical Expertise",
 					"Text": "Front-End specialization with a Full-Stack vision for scalable architectures"
 				},
 				{
-					"id": 47,
+					"id": 113,
 					"Title": "Quality Code",
 					"Text": "Building structured, maintainable applications designed to last"
 				},
 				{
-					"id": 48,
+					"id": 114,
 					"Title": "Leadership & Mentorship",
 					"Text": "Proven ability to lead and guide teams toward excellence"
 				}
@@ -181,153 +181,153 @@
 		},
 		{
 			"__component": "blocks.technical-skills",
-			"id": 16,
+			"id": 36,
 			"Title": "My Technical Arsenal",
 			"Description": "A comprehensive collection of technologies and tools I use to build exceptional web experiences",
 			"Hash": "skills",
 			"MenuValue": "Skills",
 			"Categories": [
 				{
-					"id": 43,
+					"id": 95,
 					"Title": "Languages",
 					"FlexWidth": false,
 					"skills": [
 						{
-							"id": 20,
-							"documentId": "bqus4ulqxs05zyl123b6itn8",
-							"Title": "HTML",
-							"createdAt": "2026-01-25T01:59:34.889Z",
-							"updatedAt": "2026-01-25T01:59:34.889Z",
-							"publishedAt": "2026-01-25T01:59:35.975Z",
-							"locale": "en",
-							"Icon": {
-								"id": 13,
-								"documentId": "v9j60y9s34ld19wsnl7w0kl3",
-								"value": "html",
-								"createdAt": "2026-01-25T01:45:19.186Z",
-								"updatedAt": "2026-01-25T01:45:19.186Z",
-								"publishedAt": "2026-01-25T01:45:19.115Z"
-							},
-							"localizations": [
-								{
-									"id": 18,
-									"documentId": "bqus4ulqxs05zyl123b6itn8",
-									"Title": "HTML",
-									"createdAt": "2026-01-25T01:59:21.876Z",
-									"updatedAt": "2026-01-25T01:59:21.876Z",
-									"publishedAt": "2026-01-25T01:59:22.954Z",
-									"locale": "fr-CA"
-								}
-							]
-						},
-						{
-							"id": 12,
-							"documentId": "qsp6ywz7ap1vmr41ey4ungqg",
-							"Title": "CSS",
-							"createdAt": "2026-01-25T01:58:27.730Z",
-							"updatedAt": "2026-01-25T01:58:27.730Z",
-							"publishedAt": "2026-01-25T01:58:28.816Z",
-							"locale": "en",
-							"Icon": {
-								"id": 5,
-								"documentId": "t0x0arelnvfuoaxrje1n1eut",
-								"value": "css",
-								"createdAt": "2026-01-25T01:43:24.949Z",
-								"updatedAt": "2026-01-25T01:43:24.949Z",
-								"publishedAt": "2026-01-25T01:43:24.884Z"
-							},
-							"localizations": [
-								{
-									"id": 10,
-									"documentId": "qsp6ywz7ap1vmr41ey4ungqg",
-									"Title": "CSS",
-									"createdAt": "2026-01-25T01:58:09.149Z",
-									"updatedAt": "2026-01-25T01:58:09.149Z",
-									"publishedAt": "2026-01-25T01:58:10.227Z",
-									"locale": "fr-CA"
-								}
-							]
-						},
-						{
-							"id": 25,
-							"documentId": "lviqegc3dy4305e95r9pacik",
-							"Title": "JavaScript",
-							"createdAt": "2026-01-25T02:00:15.200Z",
-							"updatedAt": "2026-01-25T02:00:15.200Z",
-							"publishedAt": "2026-01-25T02:00:16.280Z",
-							"locale": "en",
-							"Icon": {
-								"id": 14,
-								"documentId": "z2fgzy1znc5upolft2mj9692",
-								"value": "js",
-								"createdAt": "2026-01-25T01:45:32.115Z",
-								"updatedAt": "2026-01-25T01:45:32.115Z",
-								"publishedAt": "2026-01-25T01:45:32.050Z"
-							},
-							"localizations": [
-								{
-									"id": 23,
-									"documentId": "lviqegc3dy4305e95r9pacik",
-									"Title": "JavaScript",
-									"createdAt": "2026-01-25T01:59:51.197Z",
-									"updatedAt": "2026-01-25T01:59:59.406Z",
-									"publishedAt": "2026-01-25T02:00:00.749Z",
-									"locale": "fr-CA"
-								}
-							]
-						},
-						{
-							"id": 37,
-							"documentId": "tiqymwztithh8098omcn97zr",
-							"Title": "PHP",
-							"createdAt": "2026-01-25T02:01:46.559Z",
-							"updatedAt": "2026-01-25T02:01:46.559Z",
-							"publishedAt": "2026-01-25T02:01:47.649Z",
-							"locale": "en",
-							"Icon": {
-								"id": 19,
-								"documentId": "rcatajuazww1tl5u4x1rg0ci",
-								"value": "php",
-								"createdAt": "2026-01-25T01:46:47.986Z",
-								"updatedAt": "2026-01-25T01:46:47.986Z",
-								"publishedAt": "2026-01-25T01:46:47.919Z"
-							},
-							"localizations": [
-								{
-									"id": 35,
-									"documentId": "tiqymwztithh8098omcn97zr",
-									"Title": "PHP",
-									"createdAt": "2026-01-25T02:01:32.466Z",
-									"updatedAt": "2026-01-25T02:01:32.466Z",
-									"publishedAt": "2026-01-25T02:01:33.540Z",
-									"locale": "fr-CA"
-								}
-							]
-						},
-						{
-							"id": 8,
-							"documentId": "wto48paqvdgae8x5bfd56m2r",
+							"id": 86,
+							"documentId": "npfez7etwwsh2dutkazu2gn6",
 							"Title": "C#",
-							"createdAt": "2026-01-25T01:57:51.617Z",
-							"updatedAt": "2026-01-25T01:57:51.617Z",
-							"publishedAt": "2026-01-25T01:57:52.692Z",
+							"createdAt": "2026-01-24T16:09:50.276Z",
+							"updatedAt": "2026-02-19T00:04:32.391Z",
+							"publishedAt": "2026-02-19T00:04:32.403Z",
 							"locale": "en",
 							"Icon": {
-								"id": 4,
-								"documentId": "vpvdyc4kh4z6aigbzwuve24y",
+								"id": 8,
+								"documentId": "uqdnetullmfvq7sbtqk06mcj",
 								"value": "csharp",
-								"createdAt": "2026-01-25T01:43:10.959Z",
-								"updatedAt": "2026-01-25T01:43:10.959Z",
-								"publishedAt": "2026-01-25T01:43:10.891Z"
+								"createdAt": "2026-01-21T23:11:28.220Z",
+								"updatedAt": "2026-01-21T23:11:28.220Z",
+								"publishedAt": "2026-01-21T23:11:28.230Z"
 							},
 							"localizations": [
 								{
-									"id": 6,
-									"documentId": "wto48paqvdgae8x5bfd56m2r",
+									"id": 73,
+									"documentId": "npfez7etwwsh2dutkazu2gn6",
 									"Title": "C#",
-									"createdAt": "2026-01-25T01:57:39.046Z",
-									"updatedAt": "2026-01-25T01:57:39.046Z",
-									"publishedAt": "2026-01-25T01:57:40.143Z",
+									"createdAt": "2026-01-19T04:06:07.208Z",
+									"updatedAt": "2026-02-18T06:03:33.695Z",
+									"publishedAt": "2026-02-18T06:03:33.714Z",
+									"locale": "fr-CA"
+								}
+							]
+						},
+						{
+							"id": 90,
+							"documentId": "nwku74xrqrvzxagp3paoci9k",
+							"Title": "PHP",
+							"createdAt": "2026-01-24T16:11:15.290Z",
+							"updatedAt": "2026-02-19T00:04:56.565Z",
+							"publishedAt": "2026-02-19T00:04:56.575Z",
+							"locale": "en",
+							"Icon": {
+								"id": 30,
+								"documentId": "yr11csj7wghuias8fs6c3xb4",
+								"value": "php",
+								"createdAt": "2026-01-21T23:12:51.279Z",
+								"updatedAt": "2026-01-21T23:12:51.279Z",
+								"publishedAt": "2026-01-21T23:12:51.287Z"
+							},
+							"localizations": [
+								{
+									"id": 83,
+									"documentId": "nwku74xrqrvzxagp3paoci9k",
+									"Title": "PHP",
+									"createdAt": "2026-01-19T04:05:53.619Z",
+									"updatedAt": "2026-02-18T06:04:44.327Z",
+									"publishedAt": "2026-02-18T06:04:44.342Z",
+									"locale": "fr-CA"
+								}
+							]
+						},
+						{
+							"id": 88,
+							"documentId": "jsdkeibbbhce3j7sbwcakq95",
+							"Title": "HTML",
+							"createdAt": "2026-01-24T16:10:18.548Z",
+							"updatedAt": "2026-02-19T00:04:43.882Z",
+							"publishedAt": "2026-02-19T00:04:43.893Z",
+							"locale": "en",
+							"Icon": {
+								"id": 44,
+								"documentId": "ajft90mp23amesyd69i5cji3",
+								"value": "html",
+								"createdAt": "2026-01-24T16:02:03.380Z",
+								"updatedAt": "2026-01-24T16:02:03.380Z",
+								"publishedAt": "2026-01-24T16:02:03.389Z"
+							},
+							"localizations": [
+								{
+									"id": 76,
+									"documentId": "jsdkeibbbhce3j7sbwcakq95",
+									"Title": "HTML",
+									"createdAt": "2026-01-24T16:04:30.036Z",
+									"updatedAt": "2026-02-18T06:03:49.258Z",
+									"publishedAt": "2026-02-18T06:03:49.273Z",
+									"locale": "fr-CA"
+								}
+							]
+						},
+						{
+							"id": 87,
+							"documentId": "prnmy23fmb8vgvwlng8v93hl",
+							"Title": "CSS",
+							"createdAt": "2026-01-24T16:09:58.681Z",
+							"updatedAt": "2026-02-19T00:04:37.357Z",
+							"publishedAt": "2026-02-19T00:04:37.367Z",
+							"locale": "en",
+							"Icon": {
+								"id": 42,
+								"documentId": "dahs8b3r0kgy4kh839k3w1py",
+								"value": "css",
+								"createdAt": "2026-01-24T16:01:54.605Z",
+								"updatedAt": "2026-01-24T16:01:54.605Z",
+								"publishedAt": "2026-01-24T16:01:54.616Z"
+							},
+							"localizations": [
+								{
+									"id": 74,
+									"documentId": "prnmy23fmb8vgvwlng8v93hl",
+									"Title": "CSS",
+									"createdAt": "2026-01-24T16:04:46.383Z",
+									"updatedAt": "2026-02-18T06:03:37.566Z",
+									"publishedAt": "2026-02-18T06:03:37.579Z",
+									"locale": "fr-CA"
+								}
+							]
+						},
+						{
+							"id": 89,
+							"documentId": "nmg4uf7ffvap79mtb0cump53",
+							"Title": "JavaScript",
+							"createdAt": "2026-01-24T16:10:30.764Z",
+							"updatedAt": "2026-02-19T00:04:49.431Z",
+							"publishedAt": "2026-02-19T00:04:49.442Z",
+							"locale": "en",
+							"Icon": {
+								"id": 46,
+								"documentId": "ep5ix5v7xd61qliz4x3aekio",
+								"value": "js",
+								"createdAt": "2026-01-24T16:02:14.084Z",
+								"updatedAt": "2026-01-24T16:02:14.084Z",
+								"publishedAt": "2026-01-24T16:02:14.093Z"
+							},
+							"localizations": [
+								{
+									"id": 77,
+									"documentId": "nmg4uf7ffvap79mtb0cump53",
+									"Title": "JavaScript",
+									"createdAt": "2026-01-24T16:05:04.511Z",
+									"updatedAt": "2026-02-18T06:03:54.319Z",
+									"publishedAt": "2026-02-18T06:03:54.333Z",
 									"locale": "fr-CA"
 								}
 							]
@@ -335,237 +335,237 @@
 					]
 				},
 				{
-					"id": 44,
+					"id": 96,
 					"Title": "Frameworks & Librairies",
 					"FlexWidth": false,
 					"skills": [
 						{
-							"id": 41,
-							"documentId": "o4eb2y7337thua0txhpdkwv2",
+							"id": 91,
+							"documentId": "h3hq7krxikdp3we6bmaxp8oy",
 							"Title": "React",
-							"createdAt": "2026-01-25T02:02:21.802Z",
-							"updatedAt": "2026-01-25T02:02:21.802Z",
-							"publishedAt": "2026-01-25T02:02:22.889Z",
+							"createdAt": "2026-01-24T16:11:26.790Z",
+							"updatedAt": "2026-02-19T00:05:01.883Z",
+							"publishedAt": "2026-02-19T00:05:01.894Z",
 							"locale": "en",
 							"Icon": {
-								"id": 20,
-								"documentId": "uzwlbka4xlnb2x4r0j0cc4jq",
+								"id": 32,
+								"documentId": "kzp0fotlxct7w75rti61ylb2",
 								"value": "react",
-								"createdAt": "2026-01-25T01:47:00.471Z",
-								"updatedAt": "2026-01-25T01:47:00.471Z",
-								"publishedAt": "2026-01-25T01:47:00.406Z"
+								"createdAt": "2026-01-21T23:12:58.118Z",
+								"updatedAt": "2026-01-21T23:12:58.118Z",
+								"publishedAt": "2026-01-21T23:12:58.128Z"
 							},
 							"localizations": [
 								{
-									"id": 39,
-									"documentId": "o4eb2y7337thua0txhpdkwv2",
+									"id": 82,
+									"documentId": "h3hq7krxikdp3we6bmaxp8oy",
 									"Title": "React",
-									"createdAt": "2026-01-25T02:02:09.676Z",
-									"updatedAt": "2026-01-25T02:02:09.676Z",
-									"publishedAt": "2026-01-25T02:02:10.749Z",
+									"createdAt": "2026-01-19T04:03:39.812Z",
+									"updatedAt": "2026-02-18T06:04:37.666Z",
+									"publishedAt": "2026-02-18T06:04:37.676Z",
 									"locale": "fr-CA"
 								}
 							]
 						},
 						{
-							"id": 4,
-							"documentId": "ow6kcrhmv2wnvfuiqghejei6",
+							"id": 85,
+							"documentId": "ufrxpebudf95tlojwamji21m",
 							"Title": "Angular",
-							"createdAt": "2026-01-25T01:57:19.137Z",
-							"updatedAt": "2026-01-25T01:57:19.137Z",
-							"publishedAt": "2026-01-25T01:57:20.217Z",
+							"createdAt": "2026-01-24T16:09:39.922Z",
+							"updatedAt": "2026-02-19T00:04:23.062Z",
+							"publishedAt": "2026-02-19T00:04:23.074Z",
 							"locale": "en",
 							"Icon": {
-								"id": 1,
-								"documentId": "rm5qhheoca24d8s78gkq81z2",
+								"id": 2,
+								"documentId": "r6w5d9iwv9xe9mr0gf8sgy5r",
 								"value": "angular",
-								"createdAt": "2026-01-25T01:42:40.458Z",
-								"updatedAt": "2026-01-25T01:42:40.458Z",
-								"publishedAt": "2026-01-25T01:42:40.386Z"
+								"createdAt": "2026-01-21T23:11:10.430Z",
+								"updatedAt": "2026-01-21T23:11:10.430Z",
+								"publishedAt": "2026-01-21T23:11:10.444Z"
 							},
 							"localizations": [
 								{
-									"id": 2,
-									"documentId": "ow6kcrhmv2wnvfuiqghejei6",
+									"id": 72,
+									"documentId": "ufrxpebudf95tlojwamji21m",
 									"Title": "Angular",
-									"createdAt": "2026-01-25T01:57:04.926Z",
-									"updatedAt": "2026-01-25T01:57:04.926Z",
-									"publishedAt": "2026-01-25T01:57:06.039Z",
+									"createdAt": "2026-01-19T04:03:54.520Z",
+									"updatedAt": "2026-02-18T06:03:25.623Z",
+									"publishedAt": "2026-02-18T06:03:25.644Z",
+									"locale": "fr-CA"
+								}
+							]
+						},
+						{
+							"id": 94,
+							"documentId": "mw8j804dq0ai3xpdru3u2lbo",
+							"Title": "Vue",
+							"createdAt": "2026-01-24T16:12:11.701Z",
+							"updatedAt": "2026-02-19T00:05:19.432Z",
+							"publishedAt": "2026-02-19T00:05:19.436Z",
+							"locale": "en",
+							"Icon": {
+								"id": 38,
+								"documentId": "urj2oa74s29024scxpryo0o9",
+								"value": "vue",
+								"createdAt": "2026-01-21T23:13:19.989Z",
+								"updatedAt": "2026-01-21T23:13:19.989Z",
+								"publishedAt": "2026-01-21T23:13:19.997Z"
+							},
+							"localizations": [
+								{
+									"id": 79,
+									"documentId": "mw8j804dq0ai3xpdru3u2lbo",
+									"Title": "Vue",
+									"createdAt": "2026-01-19T04:04:56.684Z",
+									"updatedAt": "2026-02-18T06:04:17.958Z",
+									"publishedAt": "2026-02-18T06:04:17.974Z",
+									"locale": "fr-CA"
+								}
+							]
+						},
+						{
+							"id": 95,
+							"documentId": "svj2qu6176fhk15qp7106acp",
+							"Title": "Wordpress",
+							"createdAt": "2026-01-24T16:12:22.384Z",
+							"updatedAt": "2026-02-19T00:05:28.756Z",
+							"publishedAt": "2026-02-19T00:05:28.766Z",
+							"locale": "en",
+							"Icon": {
+								"id": 40,
+								"documentId": "m80prdu8svaypvk9gzxggjn2",
+								"value": "wordpress",
+								"createdAt": "2026-01-21T23:16:00.076Z",
+								"updatedAt": "2026-01-21T23:16:00.076Z",
+								"publishedAt": "2026-01-21T23:16:00.088Z"
+							},
+							"localizations": [
+								{
+									"id": 78,
+									"documentId": "svj2qu6176fhk15qp7106acp",
+									"Title": "Wordpress",
+									"createdAt": "2026-01-19T04:05:16.145Z",
+									"updatedAt": "2026-02-18T06:04:11.001Z",
+									"publishedAt": "2026-02-18T06:04:11.015Z",
+									"locale": "fr-CA"
+								}
+							]
+						},
+						{
+							"id": 93,
+							"documentId": "mvm71riyevbw3ppohzszvhhw",
+							"Title": "TypeScript",
+							"createdAt": "2026-01-24T16:12:01.180Z",
+							"updatedAt": "2026-02-19T00:05:14.777Z",
+							"publishedAt": "2026-02-19T00:05:14.787Z",
+							"locale": "en",
+							"Icon": {
+								"id": 48,
+								"documentId": "ow19f228fmxvntrs5k0b6dgt",
+								"value": "ts",
+								"createdAt": "2026-01-24T16:02:20.685Z",
+								"updatedAt": "2026-01-24T16:02:20.685Z",
+								"publishedAt": "2026-01-24T16:02:20.694Z"
+							},
+							"localizations": [
+								{
+									"id": 80,
+									"documentId": "mvm71riyevbw3ppohzszvhhw",
+									"Title": "TypeScript",
+									"createdAt": "2026-01-24T16:05:42.859Z",
+									"updatedAt": "2026-02-18T06:04:25.386Z",
+									"publishedAt": "2026-02-18T06:04:25.401Z",
+									"locale": "fr-CA"
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": 97,
+					"Title": "Core Competencies",
+					"FlexWidth": true,
+					"skills": [
+						{
+							"id": 48,
+							"documentId": "u872uo0e9qesnivep8gv8309",
+							"Title": "Team Leadership",
+							"createdAt": "2026-01-24T16:10:44.668Z",
+							"updatedAt": "2026-01-24T16:10:44.668Z",
+							"publishedAt": "2026-01-24T16:10:44.676Z",
+							"locale": "en",
+							"Icon": null,
+							"localizations": [
+								{
+									"id": 28,
+									"documentId": "u872uo0e9qesnivep8gv8309",
+									"Title": "Leadership d'équipe",
+									"createdAt": "2026-01-24T16:07:03.636Z",
+									"updatedAt": "2026-01-24T16:07:03.636Z",
+									"publishedAt": "2026-01-24T16:07:03.644Z",
+									"locale": "fr-CA"
+								}
+							]
+						},
+						{
+							"id": 50,
+							"documentId": "ydgvrdps09r2rihnqiwrq40v",
+							"Title": "Mentoring",
+							"createdAt": "2026-01-24T16:10:56.333Z",
+							"updatedAt": "2026-01-24T16:10:56.333Z",
+							"publishedAt": "2026-01-24T16:10:56.336Z",
+							"locale": "en",
+							"Icon": null,
+							"localizations": [
+								{
+									"id": 30,
+									"documentId": "ydgvrdps09r2rihnqiwrq40v",
+									"Title": "Mentorat",
+									"createdAt": "2026-01-24T16:07:09.105Z",
+									"updatedAt": "2026-01-24T16:07:09.105Z",
+									"publishedAt": "2026-01-24T16:07:09.113Z",
+									"locale": "fr-CA"
+								}
+							]
+						},
+						{
+							"id": 42,
+							"documentId": "w2trbtc6xi9djhud0ww03atw",
+							"Title": "Documentation",
+							"createdAt": "2026-01-24T16:10:07.167Z",
+							"updatedAt": "2026-01-24T16:10:07.167Z",
+							"publishedAt": "2026-01-24T16:10:07.175Z",
+							"locale": "en",
+							"Icon": null,
+							"localizations": [
+								{
+									"id": 84,
+									"documentId": "w2trbtc6xi9djhud0ww03atw",
+									"Title": "Documentation",
+									"createdAt": "2026-01-24T16:07:13.227Z",
+									"updatedAt": "2026-02-18T06:05:13.144Z",
+									"publishedAt": "2026-02-18T06:05:13.162Z",
 									"locale": "fr-CA"
 								}
 							]
 						},
 						{
 							"id": 57,
-							"documentId": "noozkcp3exek2ryyk8ymhnaj",
-							"Title": "Vue",
-							"createdAt": "2026-01-25T02:04:01.208Z",
-							"updatedAt": "2026-01-25T02:04:01.208Z",
-							"publishedAt": "2026-01-25T02:04:02.290Z",
-							"locale": "en",
-							"Icon": {
-								"id": 24,
-								"documentId": "inni5bgzdclhcfntyckhsa70",
-								"value": "vue",
-								"createdAt": "2026-01-25T01:47:39.164Z",
-								"updatedAt": "2026-01-25T01:47:39.164Z",
-								"publishedAt": "2026-01-25T01:47:39.099Z"
-							},
-							"localizations": [
-								{
-									"id": 55,
-									"documentId": "noozkcp3exek2ryyk8ymhnaj",
-									"Title": "Vue",
-									"createdAt": "2026-01-25T02:03:51.007Z",
-									"updatedAt": "2026-01-25T02:03:51.007Z",
-									"publishedAt": "2026-01-25T02:03:52.090Z",
-									"locale": "fr-CA"
-								}
-							]
-						},
-						{
-							"id": 61,
-							"documentId": "nmvnu7els25jgru1rpg4zlfb",
-							"Title": "Wordpress",
-							"createdAt": "2026-01-25T02:04:30.813Z",
-							"updatedAt": "2026-01-25T02:04:30.813Z",
-							"publishedAt": "2026-01-25T02:04:31.888Z",
-							"locale": "en",
-							"Icon": {
-								"id": 25,
-								"documentId": "ivq25kpz3r0mbrl4n1gt24y3",
-								"value": "wordpress",
-								"createdAt": "2026-01-25T01:47:48.644Z",
-								"updatedAt": "2026-01-25T01:47:48.644Z",
-								"publishedAt": "2026-01-25T01:47:48.579Z"
-							},
-							"localizations": [
-								{
-									"id": 59,
-									"documentId": "nmvnu7els25jgru1rpg4zlfb",
-									"Title": "Wordpress",
-									"createdAt": "2026-01-25T02:04:19.188Z",
-									"updatedAt": "2026-01-25T02:04:19.188Z",
-									"publishedAt": "2026-01-25T02:04:20.281Z",
-									"locale": "fr-CA"
-								}
-							]
-						},
-						{
-							"id": 53,
-							"documentId": "ycm9xwio3ewk6q7anvrfe0xw",
-							"Title": "TypeScript",
-							"createdAt": "2026-01-25T02:03:34.435Z",
-							"updatedAt": "2026-01-25T02:03:34.435Z",
-							"publishedAt": "2026-01-25T02:03:35.512Z",
-							"locale": "en",
-							"Icon": {
-								"id": 23,
-								"documentId": "jymt2fgs6zpzuo2w0916i1ga",
-								"value": "ts",
-								"createdAt": "2026-01-25T01:47:31.271Z",
-								"updatedAt": "2026-01-25T01:47:31.271Z",
-								"publishedAt": "2026-01-25T01:47:31.206Z"
-							},
-							"localizations": [
-								{
-									"id": 51,
-									"documentId": "ycm9xwio3ewk6q7anvrfe0xw",
-									"Title": "TypeScript",
-									"createdAt": "2026-01-25T02:03:21.841Z",
-									"updatedAt": "2026-01-25T02:03:21.841Z",
-									"publishedAt": "2026-01-25T02:03:22.923Z",
-									"locale": "fr-CA"
-								}
-							]
-						}
-					]
-				},
-				{
-					"id": 45,
-					"Title": "Core Competencies",
-					"FlexWidth": true,
-					"skills": [
-						{
-							"id": 29,
-							"documentId": "b120hus837kpolffr1mdzvub",
-							"Title": "Team Leadership",
-							"createdAt": "2026-01-25T02:00:38.182Z",
-							"updatedAt": "2026-01-25T02:00:38.182Z",
-							"publishedAt": "2026-01-25T02:00:39.204Z",
-							"locale": "en",
-							"Icon": null,
-							"localizations": [
-								{
-									"id": 27,
-									"documentId": "b120hus837kpolffr1mdzvub",
-									"Title": "Leadership d'équipe",
-									"createdAt": "2026-01-25T02:00:27.485Z",
-									"updatedAt": "2026-01-25T02:00:27.485Z",
-									"publishedAt": "2026-01-25T02:00:28.504Z",
-									"locale": "fr-CA"
-								}
-							]
-						},
-						{
-							"id": 33,
-							"documentId": "s8ri0cag1jjor3rl0s464mj2",
-							"Title": "Mentoring",
-							"createdAt": "2026-01-25T02:00:59.252Z",
-							"updatedAt": "2026-01-25T02:00:59.252Z",
-							"publishedAt": "2026-01-25T02:01:00.261Z",
-							"locale": "en",
-							"Icon": null,
-							"localizations": [
-								{
-									"id": 31,
-									"documentId": "s8ri0cag1jjor3rl0s464mj2",
-									"Title": "Mentorat",
-									"createdAt": "2026-01-25T02:00:48.052Z",
-									"updatedAt": "2026-01-25T02:00:48.052Z",
-									"publishedAt": "2026-01-25T02:00:49.060Z",
-									"locale": "fr-CA"
-								}
-							]
-						},
-						{
-							"id": 16,
-							"documentId": "a85rui8xr7dnj7edvc23z3w5",
-							"Title": "Documentation",
-							"createdAt": "2026-01-25T01:58:57.144Z",
-							"updatedAt": "2026-01-25T01:58:57.144Z",
-							"publishedAt": "2026-01-25T01:58:58.158Z",
-							"locale": "en",
-							"Icon": null,
-							"localizations": [
-								{
-									"id": 14,
-									"documentId": "a85rui8xr7dnj7edvc23z3w5",
-									"Title": "Documentation",
-									"createdAt": "2026-01-25T01:58:46.366Z",
-									"updatedAt": "2026-01-25T01:58:46.366Z",
-									"publishedAt": "2026-01-25T01:58:47.377Z",
-									"locale": "fr-CA"
-								}
-							]
-						},
-						{
-							"id": 45,
-							"documentId": "clg0jh748894ghzfswedv87s",
+							"documentId": "e22vw5nc2zafzehlm20l4bhw",
 							"Title": "Problem Solving",
-							"createdAt": "2026-01-25T02:02:37.219Z",
-							"updatedAt": "2026-01-25T02:02:37.219Z",
-							"publishedAt": "2026-01-25T02:02:38.234Z",
+							"createdAt": "2026-01-24T16:11:36.653Z",
+							"updatedAt": "2026-01-24T16:11:36.653Z",
+							"publishedAt": "2026-01-24T16:11:36.657Z",
 							"locale": "en",
 							"Icon": null,
 							"localizations": [
 								{
-									"id": 43,
-									"documentId": "clg0jh748894ghzfswedv87s",
+									"id": 34,
+									"documentId": "e22vw5nc2zafzehlm20l4bhw",
 									"Title": "Résolution de problèmes",
-									"createdAt": "2026-01-25T02:02:29.482Z",
-									"updatedAt": "2026-01-25T02:02:29.482Z",
-									"publishedAt": "2026-01-25T02:02:30.502Z",
+									"createdAt": "2026-01-24T16:07:18.409Z",
+									"updatedAt": "2026-01-24T16:07:18.409Z",
+									"publishedAt": "2026-01-24T16:07:18.416Z",
 									"locale": "fr-CA"
 								}
 							]
@@ -576,106 +576,177 @@
 		},
 		{
 			"__component": "blocks.features-projects",
-			"id": 15,
+			"id": 33,
 			"Title": "Featured Projects",
 			"Description": "Here are some of my recent projects that showcase my skills and experience.",
 			"Hash": "projects",
 			"MenuValue": "Projects",
 			"projects": [
 				{
-					"id": 5,
-					"documentId": "udtcqq37g5z4laer0g56fa4f",
+					"id": 26,
+					"documentId": "xt4hq510x3pvzujkzex4pkj2",
+					"Title": "Vandal's Arcade",
+					"Description": "Small collection of games that I made for fun and to learn",
+					"GitURL": "https://github.com/aVandalInShorts/vandals-arcade",
+					"ProjectURL": "https://vandals-arcade.francoisvandal.dev/en/",
+					"createdAt": "2026-02-18T04:31:23.314Z",
+					"updatedAt": "2026-02-18T05:53:51.610Z",
+					"publishedAt": "2026-02-18T05:53:51.629Z",
+					"locale": "en",
+					"ImageURL": "/uploads/minesweeper.jpg",
+					"skills": [
+						{
+							"id": 71,
+							"documentId": "qvfge4p4pyiun90xle8fhj25",
+							"Title": "Astro",
+							"createdAt": "2026-02-18T04:42:54.335Z",
+							"updatedAt": "2026-02-18T04:42:54.335Z",
+							"publishedAt": "2026-02-18T04:42:54.345Z",
+							"locale": "en",
+							"Icon": {
+								"id": 49,
+								"documentId": "ll3swqvlrmykrwwhs0jbs0ls",
+								"value": "astro",
+								"createdAt": "2026-02-18T04:42:14.738Z",
+								"updatedAt": "2026-02-18T04:42:14.738Z",
+								"publishedAt": "2026-02-18T04:42:14.733Z"
+							},
+							"localizations": [
+								{
+									"id": 69,
+									"documentId": "qvfge4p4pyiun90xle8fhj25",
+									"Title": "Astro",
+									"createdAt": "2026-02-18T04:42:46.081Z",
+									"updatedAt": "2026-02-18T04:42:46.081Z",
+									"publishedAt": "2026-02-18T04:42:46.093Z",
+									"locale": "fr-CA"
+								}
+							]
+						},
+						{
+							"id": 93,
+							"documentId": "mvm71riyevbw3ppohzszvhhw",
+							"Title": "TypeScript",
+							"createdAt": "2026-01-24T16:12:01.180Z",
+							"updatedAt": "2026-02-19T00:05:14.777Z",
+							"publishedAt": "2026-02-19T00:05:14.787Z",
+							"locale": "en",
+							"Icon": {
+								"id": 48,
+								"documentId": "ow19f228fmxvntrs5k0b6dgt",
+								"value": "ts",
+								"createdAt": "2026-01-24T16:02:20.685Z",
+								"updatedAt": "2026-01-24T16:02:20.685Z",
+								"publishedAt": "2026-01-24T16:02:20.694Z"
+							},
+							"localizations": [
+								{
+									"id": 80,
+									"documentId": "mvm71riyevbw3ppohzszvhhw",
+									"Title": "TypeScript",
+									"createdAt": "2026-01-24T16:05:42.859Z",
+									"updatedAt": "2026-02-18T06:04:25.386Z",
+									"publishedAt": "2026-02-18T06:04:25.401Z",
+									"locale": "fr-CA"
+								}
+							]
+						},
+						{
+							"id": 89,
+							"documentId": "nmg4uf7ffvap79mtb0cump53",
+							"Title": "JavaScript",
+							"createdAt": "2026-01-24T16:10:30.764Z",
+							"updatedAt": "2026-02-19T00:04:49.431Z",
+							"publishedAt": "2026-02-19T00:04:49.442Z",
+							"locale": "en",
+							"Icon": {
+								"id": 46,
+								"documentId": "ep5ix5v7xd61qliz4x3aekio",
+								"value": "js",
+								"createdAt": "2026-01-24T16:02:14.084Z",
+								"updatedAt": "2026-01-24T16:02:14.084Z",
+								"publishedAt": "2026-01-24T16:02:14.093Z"
+							},
+							"localizations": [
+								{
+									"id": 77,
+									"documentId": "nmg4uf7ffvap79mtb0cump53",
+									"Title": "JavaScript",
+									"createdAt": "2026-01-24T16:05:04.511Z",
+									"updatedAt": "2026-02-18T06:03:54.319Z",
+									"publishedAt": "2026-02-18T06:03:54.333Z",
+									"locale": "fr-CA"
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": 6,
+					"documentId": "eufjrq6digebv8qzf1b99a1c",
 					"Title": "Portfolio",
 					"Description": "This portfolio! Made very simply with simple tools and supported modern CSS.",
 					"GitURL": "https://github.com/aVandalInShorts/Portfolio-React",
 					"ProjectURL": null,
-					"createdAt": "2026-01-25T02:05:46.547Z",
-					"updatedAt": "2026-01-25T02:05:46.547Z",
-					"publishedAt": "2026-01-25T02:05:47.685Z",
+					"createdAt": "2026-01-19T05:20:53.884Z",
+					"updatedAt": "2026-01-19T05:21:57.437Z",
+					"publishedAt": "2026-01-19T05:21:57.458Z",
 					"locale": "en",
-					"Image": null,
+					"ImageURL": null,
 					"skills": [
 						{
-							"id": 41,
-							"documentId": "o4eb2y7337thua0txhpdkwv2",
+							"id": 82,
+							"documentId": "h3hq7krxikdp3we6bmaxp8oy",
 							"Title": "React",
-							"createdAt": "2026-01-25T02:02:21.802Z",
-							"updatedAt": "2026-01-25T02:02:21.802Z",
-							"publishedAt": "2026-01-25T02:02:22.889Z",
-							"locale": "en",
+							"createdAt": "2026-01-19T04:03:39.812Z",
+							"updatedAt": "2026-02-18T06:04:37.666Z",
+							"publishedAt": "2026-02-18T06:04:37.676Z",
+							"locale": "fr-CA",
 							"Icon": {
-								"id": 20,
-								"documentId": "uzwlbka4xlnb2x4r0j0cc4jq",
+								"id": 32,
+								"documentId": "kzp0fotlxct7w75rti61ylb2",
 								"value": "react",
-								"createdAt": "2026-01-25T01:47:00.471Z",
-								"updatedAt": "2026-01-25T01:47:00.471Z",
-								"publishedAt": "2026-01-25T01:47:00.406Z"
+								"createdAt": "2026-01-21T23:12:58.118Z",
+								"updatedAt": "2026-01-21T23:12:58.118Z",
+								"publishedAt": "2026-01-21T23:12:58.128Z"
 							},
 							"localizations": [
 								{
-									"id": 39,
-									"documentId": "o4eb2y7337thua0txhpdkwv2",
+									"id": 91,
+									"documentId": "h3hq7krxikdp3we6bmaxp8oy",
 									"Title": "React",
-									"createdAt": "2026-01-25T02:02:09.676Z",
-									"updatedAt": "2026-01-25T02:02:09.676Z",
-									"publishedAt": "2026-01-25T02:02:10.749Z",
-									"locale": "fr-CA"
+									"createdAt": "2026-01-24T16:11:26.790Z",
+									"updatedAt": "2026-02-19T00:05:01.883Z",
+									"publishedAt": "2026-02-19T00:05:01.894Z",
+									"locale": "en"
 								}
 							]
 						},
 						{
-							"id": 49,
-							"documentId": "su9x415xkxm73acr4ip7zg4y",
+							"id": 81,
+							"documentId": "gjjddsl9blrkj788gf1z50vl",
 							"Title": "Strapi",
-							"createdAt": "2026-01-25T02:03:06.252Z",
-							"updatedAt": "2026-01-25T02:03:06.252Z",
-							"publishedAt": "2026-01-25T02:03:07.323Z",
-							"locale": "en",
+							"createdAt": "2026-01-19T04:05:24.270Z",
+							"updatedAt": "2026-02-18T06:04:30.690Z",
+							"publishedAt": "2026-02-18T06:04:30.705Z",
+							"locale": "fr-CA",
 							"Icon": {
-								"id": 21,
-								"documentId": "lobuj2mnutqk6dfesc28xrf8",
+								"id": 34,
+								"documentId": "b957xgjgaoeqfk2j2a5h5gvb",
 								"value": "strapi",
-								"createdAt": "2026-01-25T01:47:09.285Z",
-								"updatedAt": "2026-01-25T01:47:09.285Z",
-								"publishedAt": "2026-01-25T01:47:09.220Z"
+								"createdAt": "2026-01-21T23:13:06.770Z",
+								"updatedAt": "2026-01-21T23:13:06.770Z",
+								"publishedAt": "2026-01-21T23:13:06.779Z"
 							},
 							"localizations": [
 								{
-									"id": 47,
-									"documentId": "su9x415xkxm73acr4ip7zg4y",
+									"id": 92,
+									"documentId": "gjjddsl9blrkj788gf1z50vl",
 									"Title": "Strapi",
-									"createdAt": "2026-01-25T02:02:55.126Z",
-									"updatedAt": "2026-01-25T02:02:55.126Z",
-									"publishedAt": "2026-01-25T02:02:56.209Z",
-									"locale": "fr-CA"
-								}
-							]
-						},
-						{
-							"id": 53,
-							"documentId": "ycm9xwio3ewk6q7anvrfe0xw",
-							"Title": "TypeScript",
-							"createdAt": "2026-01-25T02:03:34.435Z",
-							"updatedAt": "2026-01-25T02:03:34.435Z",
-							"publishedAt": "2026-01-25T02:03:35.512Z",
-							"locale": "en",
-							"Icon": {
-								"id": 23,
-								"documentId": "jymt2fgs6zpzuo2w0916i1ga",
-								"value": "ts",
-								"createdAt": "2026-01-25T01:47:31.271Z",
-								"updatedAt": "2026-01-25T01:47:31.271Z",
-								"publishedAt": "2026-01-25T01:47:31.206Z"
-							},
-							"localizations": [
-								{
-									"id": 51,
-									"documentId": "ycm9xwio3ewk6q7anvrfe0xw",
-									"Title": "TypeScript",
-									"createdAt": "2026-01-25T02:03:21.841Z",
-									"updatedAt": "2026-01-25T02:03:21.841Z",
-									"publishedAt": "2026-01-25T02:03:22.923Z",
-									"locale": "fr-CA"
+									"createdAt": "2026-01-24T16:11:50.305Z",
+									"updatedAt": "2026-02-19T00:05:07.799Z",
+									"publishedAt": "2026-02-19T00:05:07.810Z",
+									"locale": "en"
 								}
 							]
 						}
@@ -685,15 +756,15 @@
 		},
 		{
 			"__component": "blocks.contact",
-			"id": 15,
+			"id": 33,
 			"Title": "Let's Work Together",
 			"Description": [
 				{
 					"type": "paragraph",
 					"children": [
 						{
-							"text": "I'm always interested in hearing about new projects and opportunities.",
-							"type": "text"
+							"type": "text",
+							"text": "I'm always interested in hearing about new projects and opportunities."
 						}
 					]
 				}
@@ -702,78 +773,78 @@
 			"MenuValue": "Contact",
 			"Buttons": [
 				{
-					"id": 53,
+					"id": 111,
 					"Value": "Email Me",
 					"URL": "mailto:francois.vandal@gmail.com",
 					"Type": "normal",
 					"IsDownload": false,
 					"Icon": {
-						"id": 16,
-						"documentId": "l8sfc8ezdx9h8lujbpfjulgl",
+						"id": 24,
+						"documentId": "sfwgayl75dtuxneg4m1edee1",
 						"value": "mail",
-						"createdAt": "2026-01-25T01:45:54.240Z",
-						"updatedAt": "2026-01-25T01:45:54.240Z",
-						"publishedAt": "2026-01-25T01:45:54.170Z"
+						"createdAt": "2026-01-21T23:12:26.751Z",
+						"updatedAt": "2026-01-21T23:12:26.751Z",
+						"publishedAt": "2026-01-21T23:12:26.761Z"
 					}
 				}
 			],
 			"socials": [
 				{
-					"id": 15,
-					"documentId": "ak99dz43yvhojgcw1xlr0rsn",
+					"id": 25,
+					"documentId": "lfk7w9rrz0tx9tgchai5j5cz",
 					"Name": "GitHub",
 					"URL": "https://github.com/aVandalInShorts",
-					"createdAt": "2026-01-24T20:42:37.545Z",
-					"updatedAt": "2026-01-25T02:06:33.918Z",
-					"publishedAt": "2026-01-25T02:06:35.321Z",
+					"createdAt": "2026-01-19T04:00:44.284Z",
+					"updatedAt": "2026-02-19T00:07:26.553Z",
+					"publishedAt": "2026-02-19T00:07:26.563Z",
 					"locale": "en",
 					"Icon": {
-						"id": 11,
-						"documentId": "mk10nddfxq0hg1d66vmff49l",
+						"id": 18,
+						"documentId": "urfimhgsumf3wfmyed0ib5ht",
 						"value": "github",
-						"createdAt": "2026-01-25T01:44:53.221Z",
-						"updatedAt": "2026-01-25T01:44:53.221Z",
-						"publishedAt": "2026-01-25T01:44:53.156Z"
+						"createdAt": "2026-01-21T23:12:02.254Z",
+						"updatedAt": "2026-01-21T23:12:02.254Z",
+						"publishedAt": "2026-01-21T23:12:02.262Z"
 					},
 					"localizations": [
 						{
-							"id": 16,
-							"documentId": "ak99dz43yvhojgcw1xlr0rsn",
+							"id": 26,
+							"documentId": "lfk7w9rrz0tx9tgchai5j5cz",
 							"Name": "GitHub",
 							"URL": "https://github.com/aVandalInShorts",
-							"createdAt": "2026-01-24T20:41:47.185Z",
-							"updatedAt": "2026-01-25T02:06:45.061Z",
-							"publishedAt": "2026-01-25T02:06:46.451Z",
+							"createdAt": "2026-01-19T03:59:41.492Z",
+							"updatedAt": "2026-02-19T00:07:31.341Z",
+							"publishedAt": "2026-02-19T00:07:31.346Z",
 							"locale": "fr-CA"
 						}
 					]
 				},
 				{
-					"id": 18,
-					"documentId": "v7s3bvxalwqdbz5ok3ohf4vj",
+					"id": 27,
+					"documentId": "ektd3o5mf2u546ayxslpa70i",
 					"Name": "LinkedIn",
 					"URL": "https://www.linkedin.com/in/fvandal/",
-					"createdAt": "2026-01-24T20:42:56.567Z",
-					"updatedAt": "2026-01-25T02:07:17.653Z",
-					"publishedAt": "2026-01-25T02:07:19.047Z",
+					"createdAt": "2026-01-19T04:01:23.644Z",
+					"updatedAt": "2026-02-19T00:07:38.316Z",
+					"publishedAt": "2026-02-19T00:07:38.328Z",
 					"locale": "en",
 					"Icon": {
-						"id": 15,
-						"documentId": "w4e6e0ilq2wcig6qgdyc90s8",
+						"id": 22,
+						"documentId": "z28tug5z0ctjyao01d087oi5",
 						"value": "linkedin",
-						"createdAt": "2026-01-25T01:45:42.850Z",
-						"updatedAt": "2026-01-25T01:45:42.850Z",
-						"publishedAt": "2026-01-25T01:45:42.785Z"
+						"createdAt": "2026-01-21T23:12:18.432Z",
+						"updatedAt": "2026-01-21T23:12:18.432Z",
+						"publishedAt": "2026-01-21T23:12:18.439Z"
 					},
 					"localizations": [
 						{
-							"id": 17,
-							"documentId": "v7s3bvxalwqdbz5ok3ohf4vj",
+							"id": 28,
+							"documentId": "ektd3o5mf2u546ayxslpa70i",
 							"Name": "LinkedIn",
 							"URL": "https://www.linkedin.com/in/fvandal/?locale=fr_FR",
-							"createdAt": "2026-01-24T20:41:56.656Z",
-							"updatedAt": "2026-01-25T02:07:07.335Z",
-							"publishedAt": "2026-01-25T02:07:08.724Z",
+							"createdAt": "2026-01-19T03:58:54.586Z",
+							"updatedAt": "2026-02-19T00:07:43.579Z",
+							"publishedAt": "2026-02-19T00:07:43.589Z",
 							"locale": "fr-CA"
 						}
 					]

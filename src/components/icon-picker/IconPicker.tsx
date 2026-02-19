@@ -1,4 +1,5 @@
 import { Angular } from "./icons/Angular";
+import { Astro } from "./icons/Astro";
 import { Close } from "./icons/Close";
 import { Code } from "./icons/Code";
 import { Csharp } from "./icons/Csharp";
@@ -26,6 +27,7 @@ import { Wordpress } from "./icons/Wordpress";
 
 export type IconType =
 	| "angular"
+	| "astro"
 	| "close"
 	| "code"
 	| "csharp"
@@ -58,6 +60,8 @@ interface IconPickerProps {
 export const IconPicker = ({ icon }: IconPickerProps) => {
 	if (icon === "angular") {
 		return <Angular />;
+	} else if (icon === "astro") {
+		return <Astro />;
 	} else if (icon === "close") {
 		return <Close />;
 	} else if (icon === "code") {

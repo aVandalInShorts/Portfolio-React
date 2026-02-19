@@ -8,7 +8,7 @@ import styles from "./ProjectsItem.module.css";
 export const ProjectsItem = ({
 	Title,
 	Description,
-	Image,
+	ImageURL,
 	ProjectURL,
 	GitURL,
 	skills,
@@ -17,10 +17,10 @@ export const ProjectsItem = ({
 		<div className={styles.item + " fade-in"}>
 			<div className={styles["item-inner"]}>
 				<div className={styles["items-img-ctn"]}>
-					{!Image && <IconPicker icon="code" />}
-					{Image && (
+					{!ImageURL && <IconPicker icon="code" />}
+					{ImageURL && (
 						<img
-							src={`${import.meta.env.VITE_STRAPI_API_URL}${Image.url}`}
+							src={ImageURL}
 							alt={Title}
 							className={styles.image}
 							loading="lazy"
